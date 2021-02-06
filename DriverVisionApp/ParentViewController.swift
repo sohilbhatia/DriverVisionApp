@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 var finalCode = String()
+//gitest
 class ParentViewController: UIViewController {
     let uppercaseLetters = (65...90).map {String(UnicodeScalar($0))}
 
