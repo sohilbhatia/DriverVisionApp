@@ -30,7 +30,7 @@ class TeenViewController: UIViewController {
     
     @IBAction func nextClicked(_ sender: Any) {
         
-        let pre_vc = self.storyboard?.instantiateViewController(identifier: "name_vc") as! NameViewController
+        let pre_vc = self.storyboard?.instantiateViewController(identifier: "swipe_vc") as! SwipeViewController
         self.view.window?.rootViewController = pre_vc
         self.view.window?.makeKeyAndVisible()
         
