@@ -30,7 +30,7 @@ class TeenViewController: UIViewController {
     
     @IBAction func nextClicked(_ sender: Any) {
         
-        let pre_vc = self.storyboard?.instantiateViewController(identifier: "swipe_vc") as! SwipeViewController
+        let pre_vc = self.storyboard?.instantiateViewController(identifier: "root_vc") as! RootViewController
         self.view.window?.rootViewController = pre_vc
         self.view.window?.makeKeyAndVisible()
         
@@ -85,6 +85,7 @@ class TeenViewController: UIViewController {
         bottomLine.backgroundColor = UIColor.white.cgColor
         codeField.borderStyle = UITextField.BorderStyle.none
         codeField.layer.addSublayer(bottomLine)
+        codeField.text = myCode
         
         validateButton.backgroundColor = UIColor.white
         validateButton.layer.cornerRadius = 25.0

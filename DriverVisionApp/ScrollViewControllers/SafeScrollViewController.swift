@@ -12,8 +12,8 @@ class SafeScrollViewController: UIViewController {
     @IBOutlet var safeAni: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var animationV =  AnimationView(name: "lf30_editor_46ulwchd")
-        animationV = AnimationView(name: "lf30_editor_46ulwchd")
+        var animationV =  AnimationView(name: "lf30_editor_wmagglsb")
+        animationV = AnimationView(name: "lf30_editor_wmagglsb")
         animationV.contentMode = .scaleAspectFit
         self.safeAni.addSubview(animationV)
         animationV.frame = self.safeAni.bounds

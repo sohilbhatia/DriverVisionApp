@@ -12,8 +12,8 @@ class NotiScrollViewController: UIViewController {
     @IBOutlet var notiAni: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var animationV =  AnimationView(name: "lf30_editor_stpykcmy")
-        animationV = AnimationView(name: "lf30_editor_stpykcmy")
+        var animationV =  AnimationView(name: "lf30_editor_fpivp6yy")
+        animationV = AnimationView(name: "lf30_editor_fpivp6yy")
         animationV.contentMode = .scaleAspectFit
         self.notiAni.addSubview(animationV)
         animationV.frame = self.notiAni.bounds

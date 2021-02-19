@@ -26,10 +26,11 @@
 		AA4E2B182599328900844AB9 /* TeenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4E2B172599328900844AB9 /* TeenViewController.swift */; };
 		AA4E2B1D25999C9F00844AB9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4E2B1C25999C9F00844AB9 /* HomeViewController.swift */; };
 		AA4E2B262599CF9500844AB9 /* ParentHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4E2B252599CF9500844AB9 /* ParentHomeViewController.swift */; };
+		AA4FFE4825DF7A820004AD64 /* lf30_editor_fpivp6yy.json in Resources */ = {isa = PBXBuildFile; fileRef = AA4FFE4725DF7A820004AD64 /* lf30_editor_fpivp6yy.json */; };
+		AA4FFE4D25DF7B3C0004AD64 /* lf30_editor_wmagglsb.json in Resources */ = {isa = PBXBuildFile; fileRef = AA4FFE4C25DF7B3C0004AD64 /* lf30_editor_wmagglsb.json */; };
 		AA64945725BEA9E5004FEA06 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA64945625BEA9E5004FEA06 /* SettingsViewController.swift */; };
 		AA663E3625CB8A8C0074626D /* car.json in Resources */ = {isa = PBXBuildFile; fileRef = AA663E3525CB8A8C0074626D /* car.json */; };
 		AA663E3B25CB940F0074626D /* mycar.json in Resources */ = {isa = PBXBuildFile; fileRef = AA663E3A25CB940F0074626D /* mycar.json */; };
-		AA7E13F925CF38C300841DE7 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E13F825CF38C300841DE7 /* SwipeViewController.swift */; };
 		AA81A7DD25B2AA950007ACC8 /* lf30_editor_sftuxhry.json in Resources */ = {isa = PBXBuildFile; fileRef = AA81A7DC25B2AA950007ACC8 /* lf30_editor_sftuxhry.json */; };
 		AA83AE8525CA8B9700174945 /* PreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA83AE8425CA8B9700174945 /* PreViewController.swift */; };
 		AA8AA43E25D7457D006D3468 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8AA43D25D7457D006D3468 /* RootViewController.swift */; };
@@ -94,11 +95,12 @@
 		AA4E2B172599328900844AB9 /* TeenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenViewController.swift; sourceTree = "<group>"; };
 		AA4E2B1C25999C9F00844AB9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AA4E2B252599CF9500844AB9 /* ParentHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentHomeViewController.swift; sourceTree = "<group>"; };
+		AA4FFE4725DF7A820004AD64 /* lf30_editor_fpivp6yy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_fpivp6yy.json; path = ../../../Downloads/lf30_editor_fpivp6yy.json; sourceTree = "<group>"; };
+		AA4FFE4C25DF7B3C0004AD64 /* lf30_editor_wmagglsb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_wmagglsb.json; path = ../../../Downloads/lf30_editor_wmagglsb.json; sourceTree = "<group>"; };
 		AA51E2DC25D836D6005B96DD /* arrows.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = arrows.json; sourceTree = "<group>"; };
 		AA64945625BEA9E5004FEA06 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		AA663E3525CB8A8C0074626D /* car.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = car.json; path = ../../../Downloads/car.json; sourceTree = "<group>"; };
 		AA663E3A25CB940F0074626D /* mycar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mycar.json; path = ../../../Downloads/mycar.json; sourceTree = "<group>"; };
-		AA7E13F825CF38C300841DE7 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		AA81A7DC25B2AA950007ACC8 /* lf30_editor_sftuxhry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_sftuxhry.json; path = ../../../Downloads/lf30_editor_sftuxhry.json; sourceTree = "<group>"; };
 		AA83AE8425CA8B9700174945 /* PreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreViewController.swift; sourceTree = "<group>"; };
 		AA8AA43D25D7457D006D3468 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -201,7 +203,6 @@
 				AA4E2B252599CF9500844AB9 /* ParentHomeViewController.swift */,
 				AA1F4FFA259874F60074ED79 /* Main.storyboard */,
 				AA8AA43D25D7457D006D3468 /* RootViewController.swift */,
-				AA7E13F825CF38C300841DE7 /* SwipeViewController.swift */,
 				AA83AE8425CA8B9700174945 /* PreViewController.swift */,
 				AAA6D7BC25C932240059C676 /* NameViewController.swift */,
 				AADD58A6259A9F90004F054B /* MapViewController.swift */,
@@ -218,6 +219,8 @@
 				AA19EF6525B22E290007D821 /* lf30_editor_q50j0emu.json */,
 				AAE796B025B291F2005513A9 /* lf30_editor_xrhtiztp.json */,
 				AA81A7DC25B2AA950007ACC8 /* lf30_editor_sftuxhry.json */,
+				AA4FFE4725DF7A820004AD64 /* lf30_editor_fpivp6yy.json */,
+				AA4FFE4C25DF7B3C0004AD64 /* lf30_editor_wmagglsb.json */,
 				AAFD102E25D8347B0063B371 /* arrows.json */,
 				AA663E3A25CB940F0074626D /* mycar.json */,
 				AA663E3525CB8A8C0074626D /* car.json */,
@@ -384,9 +387,11 @@
 				AA663E3B25CB940F0074626D /* mycar.json in Resources */,
 				AA1F4FFE259874F80074ED79 /* Assets.xcassets in Resources */,
 				AA19EF6625B22E290007D821 /* lf30_editor_q50j0emu.json in Resources */,
+				AA4FFE4D25DF7B3C0004AD64 /* lf30_editor_wmagglsb.json in Resources */,
 				AA0612A725D78D170016975C /* lf30_editor_stpykcmy.json in Resources */,
 				AA1F4FFC259874F60074ED79 /* Main.storyboard in Resources */,
 				AA663E3625CB8A8C0074626D /* car.json in Resources */,
+				AA4FFE4825DF7A820004AD64 /* lf30_editor_fpivp6yy.json in Resources */,
 				AA81A7DD25B2AA950007ACC8 /* lf30_editor_sftuxhry.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,7 +535,6 @@
 				AADD58A7259A9F90004F054B /* MapViewController.swift in Sources */,
 				AA64945725BEA9E5004FEA06 /* SettingsViewController.swift in Sources */,
 				AAA6D7BD25C932240059C676 /* NameViewController.swift in Sources */,
-				AA7E13F925CF38C300841DE7 /* SwipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

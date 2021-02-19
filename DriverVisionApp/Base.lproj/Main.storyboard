@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9PH-Ju-JDa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -30,7 +30,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Car" translatesAutoresizingMaskIntoConstraints="NO" id="FyG-Au-7w2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car-driver-vision-official" translatesAutoresizingMaskIntoConstraints="NO" id="FyG-Au-7w2">
                                 <rect key="frame" x="45" y="71" width="329" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -39,7 +39,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
                                 <state key="normal" title="Parent">
-                                    <color key="titleColor" red="0.14901960780000001" green="0.31764705879999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.1960784314" green="0.4431372549" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="f5p-l5-taj" kind="presentation" id="Xja-Rg-Umf"/>
@@ -50,7 +50,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
                                 <state key="normal" title="Teenager">
-                                    <color key="titleColor" red="0.14901960780000001" green="0.31764705879999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.1960784314" green="0.4431372549" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="31f-bV-CcL" kind="presentation" id="jee-fK-OaJ"/>
@@ -58,7 +58,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.14633297919999999" green="0.2758981586" blue="0.86279368400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.19607843137254902" green="0.44313725490196076" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
@@ -93,11 +93,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrX-DE-6Oy">
-                                <rect key="frame" x="57" y="596" width="300" height="59"/>
+                                <rect key="frame" x="57" y="343" width="300" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
                                 <state key="normal" title="Validate Code">
-                                    <color key="titleColor" red="0.14901960780000001" green="0.31764705879999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.1960784314" green="0.4431372549" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="submitClicked:" destination="31f-bV-CcL" eventType="touchUpInside" id="hDj-4c-Xwy"/>
@@ -110,21 +110,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipd-ZC-Pbo">
-                                <rect key="frame" x="120" y="712" width="175" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.14901960780000001" green="0.31764705879999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="nextClicked:" destination="31f-bV-CcL" eventType="touchUpInside" id="klf-Oh-SKi"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7uV-KM-DFt">
                                 <rect key="frame" x="65" y="29" width="284" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1680216491" green="0.2958274186" blue="0.83141851430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.4431372549" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Ex. (AE42)" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="24" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9Qc-04-1sQ">
                                 <rect key="frame" x="88" y="410" width="239" height="63"/>
@@ -140,9 +129,20 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipd-ZC-Pbo">
+                                <rect key="frame" x="219" y="201" width="175" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.1960784314" green="0.4431372549" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextClicked:" destination="31f-bV-CcL" eventType="touchUpInside" id="klf-Oh-SKi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QUR-VK-qNn"/>
-                        <color key="backgroundColor" red="0.14901960780000001" green="0.31764705879999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1960784314" green="0.4431372549" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.099624881319999997" green="0.16336508399999999" blue="0.42160283799999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="raS-D1-IjV"/>
@@ -161,7 +161,7 @@
         <!--Home View Controller-->
         <scene sceneID="cQc-Zx-iMZ">
             <objects>
-                <viewController id="g7i-I6-H2F" customClass="HomeViewController" customModule="DriverVisionApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home_vc" id="g7i-I6-H2F" customClass="HomeViewController" customModule="DriverVisionApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Q6-4I-3W9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -260,7 +260,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7kX-Kj-IMd"/>
-                        <color key="backgroundColor" red="0.168895185" green="0.3575263917" blue="0.87155288460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1960784314" green="0.4431372549" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
                         <outlet property="nameField" destination="R5F-FG-uja" id="pdv-Ng-tgY"/>
@@ -440,43 +440,10 @@
             </objects>
             <point key="canvasLocation" x="2724.6376811594205" y="-930.13392857142856"/>
         </scene>
-        <!--Swipe View Controller-->
-        <scene sceneID="ky5-xt-a9O">
-            <objects>
-                <viewController id="hXI-Fv-Qdx" customClass="SwipeViewController" customModule="DriverVisionApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="V7g-mt-uXo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="HLW-Ke-PBI">
-                                <rect key="frame" x="146" y="813" width="123" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="currentPageIndicatorTintColor" red="0.14901960780000001" green="0.31764705879999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0BD-16-TDi">
-                                <rect key="frame" x="0.0" y="68" width="414" height="722"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="tA5-D0-zqw"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Eg0-rq-D58"/>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="50v-R2-2fa"/>
-                        <color key="backgroundColor" red="0.168895185" green="0.3575263917" blue="0.87155288460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <connections>
-                        <outlet property="pageControl" destination="HLW-Ke-PBI" id="Lnp-MB-R1g"/>
-                        <outlet property="scrollView" destination="0BD-16-TDi" id="VJG-mz-WhR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="grl-9V-2Ff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2779.7101449275365" y="429.91071428571428"/>
-        </scene>
         <!--Root View Controller-->
         <scene sceneID="OOV-69-tT6">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="9PH-Ju-JDa" customClass="RootViewController" customModule="DriverVisionApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="root_vc" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="9PH-Ju-JDa" customClass="RootViewController" customModule="DriverVisionApp" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6vP-xB-2BQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3513" y="431"/>
@@ -514,7 +481,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lHg-km-2T3"/>
-                        <color key="backgroundColor" red="0.14633297919999999" green="0.2758981586" blue="0.86279368400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.1960784314" green="0.4431372549" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
                         <outlet property="arrowsAni" destination="Nxb-ST-gCx" id="wsq-JY-TOV"/>
@@ -554,7 +521,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kda-v9-aGc"/>
-                        <color key="backgroundColor" red="0.14633297919999999" green="0.2758981586" blue="0.86279368400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.1960784314" green="0.4431372549" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
                         <outlet property="notiAni" destination="oBi-gg-OiV" id="6Ia-pJ-eca"/>
@@ -588,12 +555,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7C-8f-d2k">
-                                <rect key="frame" x="91" y="304" width="233" height="376"/>
+                                <rect key="frame" x="28" y="280" width="358" height="467"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t3H-Dn-mIa"/>
-                        <color key="backgroundColor" red="0.14633297919999999" green="0.2758981586" blue="0.86279368400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.1960784314" green="0.4431372549" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
                         <outlet property="safeAni" destination="c7C-8f-d2k" id="BbD-RE-CFa"/>
@@ -605,7 +572,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Car" width="372" height="164"/>
+        <image name="car-driver-vision-official" width="602" height="389"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

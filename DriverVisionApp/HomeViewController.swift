@@ -34,14 +34,15 @@ class HomeViewController: UIViewController {
         content.sound = UNNotificationSound.default
         
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 6, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
         
         let request = UNNotificationRequest(identifier: "testIdentifier", content: content, trigger: trigger)
         
-        UNUserNotificationCenter.current().add(request) { (nil) in
+        UNUserNotificationCenter.current().add(request)
             
-        }
-        self.ref.child("codes").child(myCode).child("messages").setValue(["message":"button was clicked"])
+        
+        print(myCode)
+        self.ref.child("codes").child("O2E1").child("messages").setValue(["message":"button was clicked"])
         
         
 
@@ -51,9 +52,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { [self] (didAllow, error) in
-            if let label = welcome {
-                label.textColor = .black
-            }
+            
             
             
         // Do any additional setup after loading the view.
