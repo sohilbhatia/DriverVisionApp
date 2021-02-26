@@ -33,6 +33,8 @@ class TeenViewController: UIViewController {
         let pre_vc = self.storyboard?.instantiateViewController(identifier: "root_vc") as! RootViewController
         self.view.window?.rootViewController = pre_vc
         self.view.window?.makeKeyAndVisible()
+        print(codeField.text!)
+        myCode = codeField.text!
         
         /*
         let mapsVC = MapViewController()
@@ -85,7 +87,7 @@ class TeenViewController: UIViewController {
         bottomLine.backgroundColor = UIColor.white.cgColor
         codeField.borderStyle = UITextField.BorderStyle.none
         codeField.layer.addSublayer(bottomLine)
-        codeField.text = myCode
+        
         
         validateButton.backgroundColor = UIColor.white
         validateButton.layer.cornerRadius = 25.0

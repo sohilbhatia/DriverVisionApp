@@ -41,8 +41,8 @@ class HomeViewController: UIViewController {
         UNUserNotificationCenter.current().add(request)
             
         
-        print(myCode)
-        self.ref.child("codes").child("O2E1").child("messages").setValue(["message":"button was clicked"])
+        print("THIS IS THE CODE " + myCode)
+        self.ref.child("codes").child(myCode).child("messages").setValue(["message":"button was clicked"])
         
         
 

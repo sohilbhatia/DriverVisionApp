@@ -194,19 +194,18 @@
 		AA1F4FF3259874F60074ED79 /* DriverVisionApp */ = {
 			isa = PBXGroup;
 			children = (
+				AA8A26D125E8D982009F4133 /* HomeView Controllers */,
 				AAFD103625D8348C0063B371 /* JSON Files */,
 				AA8AA45125D74F1A006D3468 /* ScrollViewControllers */,
 				AA1F4FF4259874F60074ED79 /* AppDelegate.swift */,
 				AA1F4FF6259874F60074ED79 /* SceneDelegate.swift */,
 				AA1F4FF8259874F60074ED79 /* ViewController.swift */,
 				AA94957A25987F96000A537B /* ParentViewController.swift */,
-				AA4E2B252599CF9500844AB9 /* ParentHomeViewController.swift */,
 				AA1F4FFA259874F60074ED79 /* Main.storyboard */,
 				AA8AA43D25D7457D006D3468 /* RootViewController.swift */,
 				AA83AE8425CA8B9700174945 /* PreViewController.swift */,
 				AAA6D7BC25C932240059C676 /* NameViewController.swift */,
 				AADD58A6259A9F90004F054B /* MapViewController.swift */,
-				AA4E2B1C25999C9F00844AB9 /* HomeViewController.swift */,
 				AA4E2B172599328900844AB9 /* TeenViewController.swift */,
 				AA64945625BEA9E5004FEA06 /* SettingsViewController.swift */,
 				AA1F4FFD259874F80074ED79 /* Assets.xcassets */,
@@ -244,6 +243,15 @@
 				AA1F5018259874F80074ED79 /* Info.plist */,
 			);
 			path = DriverVisionAppUITests;
+			sourceTree = "<group>";
+		};
+		AA8A26D125E8D982009F4133 /* HomeView Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA4E2B252599CF9500844AB9 /* ParentHomeViewController.swift */,
+				AA4E2B1C25999C9F00844AB9 /* HomeViewController.swift */,
+			);
+			path = "HomeView Controllers";
 			sourceTree = "<group>";
 		};
 		AA8AA45125D74F1A006D3468 /* ScrollViewControllers */ = {

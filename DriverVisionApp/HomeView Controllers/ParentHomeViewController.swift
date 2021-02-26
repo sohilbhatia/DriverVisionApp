@@ -18,7 +18,6 @@ class ParentHomeViewController: UIViewController {
         ref.child("codes").child(finalCode).child("messages").observe(.childAdded, with: {(snapshot) in
             print("COUNT ACTIVATED!!!")
             let data = snapshot.value as! String
-            print(data)
             let content = UNMutableNotificationContent()
             content.title = "Drive Session Ended"
             content.body = data
