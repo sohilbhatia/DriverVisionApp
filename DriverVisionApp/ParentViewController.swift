@@ -10,16 +10,33 @@ import Firebase
 var finalCode = String()
 //gitest
 class ParentViewController: UIViewController {
+    @IBOutlet var codeNext: UIButton!
+    
+    
     let uppercaseLetters = (65...90).map {String(UnicodeScalar($0))}
+
+    
 
     func randomLetter() -> String {
         return uppercaseLetters.randomElement()!
+    }
+
+    @IBAction func nextMove(_ sender: Any) {
+        let pre_vc = self.storyboard?.instantiateViewController(identifier: "root_vc") as! RootViewController
+        self.view.window?.rootViewController = pre_vc
+        self.view.window?.makeKeyAndVisible()
     }
     @IBOutlet var generatedCodeLabel: UILabel!
     var ref: DatabaseReference!
 
     
     override func viewDidLoad() {
+        codeNext.backgroundColor = UIColor.white
+        codeNext.layer.cornerRadius = 25.0
+        codeNext.tintColor = UIColor.white
+        
+       
+        
         ref = Database.database().reference()
         super.viewDidLoad()
         let randomInt1 = Int.random(in: 0..<9)
@@ -34,9 +51,7 @@ class ParentViewController: UIViewController {
         finalCode = generatedParentCode
         // Do any additional setup after loading the view.
     }
-    @IBAction func nextAction(_ sender: Any) {
-    }
-    
+
 
     /*
     // MARK: - Navigation

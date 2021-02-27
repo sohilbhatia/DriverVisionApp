@@ -15,20 +15,23 @@ class RootViewController: UIPageViewController, UIPageViewControllerDataSource {
         let vc1 = sb.instantiateViewController(withIdentifier: "purple_vc")
         let vc2 = sb.instantiateViewController(withIdentifier: "orange_vc")
         let vc3 = sb.instantiateViewController(withIdentifier: "indigo_vc")
-        let vc4 = sb.instantiateViewController(withIdentifier: "home_vc")
+        let vc5 = sb.instantiateViewController(withIdentifier: "name_vc")
+        let vc4 = sb.instantiateViewController(withIdentifier: "g_vc")
         
-        return [vc1, vc2, vc3, vc4]
+        
+        return [vc1, vc2, vc3, vc5, vc4]
         
     }()
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        
+ 
         guard let vcIndex = viewControllerList.firstIndex(of: viewController) else {return nil}
+        
         let previousIndex = vcIndex - 1
         guard previousIndex >= 0 else {return nil}
         guard viewControllerList.count > previousIndex else {return nil}
         return viewControllerList[previousIndex]
-        //return nil
+       // return nil
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {

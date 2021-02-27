@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 class SpeedScrollViewController: UIViewController {
-
+    
     @IBOutlet var arrowsAni: UIView!
     @IBOutlet var speedAni: UIView!
     override func viewDidLoad() {

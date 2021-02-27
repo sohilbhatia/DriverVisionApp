@@ -142,7 +142,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                     
                     UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
                     countStill = 0
-                    self.ref.child("codes").child(myCode).child("messages").setValue(["message": content.body])
+                    self.ref.child("codes").child(myCode).child("messages").setValue(["message": "Your teenager went over the speedlimit " + String(Int(overSpeedPercentage)) + "% of the time."])
                     //numberOfAlerts.removeAll()
                 }
             }
