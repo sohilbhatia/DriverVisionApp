@@ -39,8 +39,8 @@ struct Course {
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
     var ref: DatabaseReference!
-    @IBOutlet var speed: UILabel!
     @IBOutlet var map: MKMapView!
+    @IBOutlet var speed: UILabel!
     @IBOutlet var speedlimit: UILabel!
     var SPDlim = Int()
     let manager = CLLocationManager()
@@ -243,7 +243,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
         ref = Database.database().reference()
-        
+        DispatchQueue.global(qos: .background).async {
+            print("This is run on the background queue")
+
+            DispatchQueue.main.async {
+                print("This is run on the main queue, after the previous code in outer block")
+            }
+        }
         
         
         

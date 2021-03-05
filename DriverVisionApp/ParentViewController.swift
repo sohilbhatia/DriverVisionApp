@@ -17,12 +17,12 @@ class ParentViewController: UIViewController {
 
     
 
-    func randomLetter() -> String {
+    func randomLetter() -> String { 
         return uppercaseLetters.randomElement()!
     }
 
     @IBAction func nextMove(_ sender: Any) {
-        let pre_vc = self.storyboard?.instantiateViewController(identifier: "root_vc") as! RootViewController
+        let pre_vc = self.storyboard?.instantiateViewController(identifier: "parent_vc") as! ParentHomeViewController
         self.view.window?.rootViewController = pre_vc
         self.view.window?.makeKeyAndVisible()
     }

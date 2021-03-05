@@ -357,19 +357,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ev4-zg-J9K">
+                                <rect key="frame" x="38" y="89" width="329" height="314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cR4-o1-zC2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="mappin.and.ellipse" catalog="system" id="aHZ-d6-SEF"/>
                     <connections>
+                        <outlet property="map" destination="ev4-zg-J9K" id="lz1-QH-d8v"/>
                         <outlet property="speed" destination="0JJ-jo-VML" id="28p-di-7lW"/>
                         <outlet property="speedlimit" destination="UeI-Ta-2QG" id="rob-5n-iGk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2T-Zy-ie3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4281" y="-528"/>
+            <point key="canvasLocation" x="4279.7101449275369" y="-528.34821428571422"/>
         </scene>
         <!--Pre View Controller-->
         <scene sceneID="jMP-uj-Doo">

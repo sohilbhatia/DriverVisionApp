@@ -12,33 +12,40 @@ class ParentHomeViewController: UIViewController {
     var ref: DatabaseReference!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(finalCode)
-        print("heyy")
         ref = Database.database().reference()
-        ref.child("codes").child(finalCode).child("messages").observe(.childAdded, with: {(snapshot) in
-            print("COUNT ACTIVATED!!!")
-            let data = snapshot.value as! String
-            let content = UNMutableNotificationContent()
-            content.title = "Drive Session Ended"
-            content.body = data
-            content.subtitle = "From Your Teen Driver"
+        DispatchQueue.global(qos: .background).async { [self] in
+            print(finalCode)
+            print("heyy")
             
-            content.badge = 1
-            content.sound = UNNotificationSound.default
-            
-            
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 6, repeats: false)
-            
-            let request = UNNotificationRequest(identifier: "testIdentifier", content: content, trigger: trigger)
-            
-            UNUserNotificationCenter.current().add(request) { (nil) in
+            ref.child("codes").child(finalCode).child("messages").observe(.childAdded, with: {(snapshot) in
+                print("COUNT ACTIVATED!!!")
+                let data = snapshot.value as! String
+                let content = UNMutableNotificationContent()
+                content.title = "Drive Session Ended"
+                content.body = data
+                content.subtitle = "From Your Teen Driver"
                 
+                content.badge = 1
+                content.sound = UNNotificationSound.default
+                
+                
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+                
+                let request = UNNotificationRequest(identifier: "testIdentifier", content: content, trigger: trigger)
+                
+                UNUserNotificationCenter.current().add(request) { (nil) in
+                    
+                }
+                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { [self] (didAllow, error) in
+                }
+            // Do any additional setup after loading the view.
+            })
+
+            DispatchQueue.main.async {
+                print("This is run on the main queue, after the previous code in outer block")
             }
-            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (didAllow, error) in
-            
-            }
-        // Do any additional setup after loading the view.
-        })
+        }
+       
     }
     
 
