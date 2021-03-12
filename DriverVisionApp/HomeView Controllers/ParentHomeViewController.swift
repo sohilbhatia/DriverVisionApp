@@ -29,7 +29,7 @@ class ParentHomeViewController: UIViewController {
                 content.sound = UNNotificationSound.default
                 
                 
-                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: (1*60), repeats: false)
                 
                 let request = UNNotificationRequest(identifier: "testIdentifier", content: content, trigger: trigger)
                 

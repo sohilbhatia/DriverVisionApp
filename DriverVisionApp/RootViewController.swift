@@ -16,7 +16,7 @@ class RootViewController: UIPageViewController, UIPageViewControllerDataSource {
         let vc2 = sb.instantiateViewController(withIdentifier: "orange_vc")
         let vc3 = sb.instantiateViewController(withIdentifier: "indigo_vc")
         let vc5 = sb.instantiateViewController(withIdentifier: "name_vc")
-        let vc4 = sb.instantiateViewController(withIdentifier: "map_vc")
+        let vc4 = sb.instantiateViewController(withIdentifier: "g_vc")
         
         
         return [vc1, vc2, vc3, vc5, vc4]

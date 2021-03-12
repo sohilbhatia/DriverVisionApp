@@ -48,6 +48,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[0]
         
+        guard let mostRecentLocation = locations.last else {
+            return
+        }
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = mostRecentLocation.coordinate
+        
+        
+        
+        
         let span = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
         let myLocation = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
         let region = MKCoordinateRegion(center: myLocation, span: span)
@@ -149,7 +158,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         }
         
     }
-    
+    //run app when
     
 
     /*
@@ -242,7 +251,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
+        manager.allowsBackgroundLocationUpdates = true
         ref = Database.database().reference()
+        
+        
         DispatchQueue.global(qos: .background).async {
             print("This is run on the background queue")
 
