@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import FirebaseMessaging
 var finalCode = String()
 //gitest
 class ParentViewController: UIViewController {
@@ -36,6 +37,7 @@ class ParentViewController: UIViewController {
         codeNext.tintColor = UIColor.white
         
        
+        self.hideKeyboardWhenTappedAround()
         
         ref = Database.database().reference()
         super.viewDidLoad()
@@ -45,7 +47,8 @@ class ParentViewController: UIViewController {
         let randomString2 = randomLetter
         
         let generatedParentCode = randomString1 + String(randomInt1) + randomString2() + String(randomInt2)
-        self.ref.child("codes").child(generatedParentCode).setValue(["code": generatedParentCode])
+        self.ref.child("codes").child(generatedParentCode).updateChildValues(["code": generatedParentCode])
+        self.ref.child("codes").child(generatedParentCode).updateChildValues(["parentToken": Messaging.messaging().fcmToken!])
             
         generatedCodeLabel.text = generatedParentCode
         finalCode = generatedParentCode

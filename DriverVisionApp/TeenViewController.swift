@@ -98,6 +98,9 @@ class TeenViewController: UIViewController {
         nextButton.tintColor = UIColor.white
         nextButton.isEnabled = false
         
+        
+        self.hideKeyboardWhenTappedAround()
+        
         //let animationV =  AnimationView(name: "lf30_editor_sftuxhry")
         /*
         animationV.contentMode = .scaleAspectFit
@@ -143,7 +146,7 @@ class TeenViewController: UIViewController {
                         self.connectV.addSubview(animationV)
                         animationV.frame = self.connectV.bounds
                         animationV.play()
-                        
+                        self.ref.child("codes").child(self.codeField.text!).updateChildValues(["teenToken": Messaging.messaging().fcmToken!])
                         nextButton.isEnabled = true
                         
                        
@@ -224,5 +227,16 @@ extension UITextField{
         set {
             self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSAttributedString.Key.foregroundColor: newValue!])
         }
+    }
+}
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

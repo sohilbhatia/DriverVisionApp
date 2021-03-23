@@ -14,6 +14,8 @@ class NameViewController: UIViewController {
     @IBOutlet var nxtBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.hideKeyboardWhenTappedAround()
         nxtBtn.isEnabled = true
         nameField.font = UIFont(name: "Avenir", size: 29)
         nameField.textColor = UIColor.white
@@ -57,3 +59,4 @@ class NameViewController: UIViewController {
     */
 
 }
+

@@ -109,6 +109,7 @@
 		AA8AA44C25D74F14006D3468 /* SafeScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeScrollViewController.swift; sourceTree = "<group>"; };
 		AA94957A25987F96000A537B /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		AAA6D7BC25C932240059C676 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		AAAD9CE325FC3EAA00379A02 /* DriverVisionApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DriverVisionApp.entitlements; sourceTree = "<group>"; };
 		AADD58A6259A9F90004F054B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AAE796B025B291F2005513A9 /* lf30_editor_xrhtiztp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_xrhtiztp.json; path = ../../../Downloads/lf30_editor_xrhtiztp.json; sourceTree = "<group>"; };
 		AAFD102E25D8347B0063B371 /* arrows.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = arrows.json; path = ../../../Downloads/arrows.json; sourceTree = "<group>"; };
@@ -194,6 +195,7 @@
 		AA1F4FF3259874F60074ED79 /* DriverVisionApp */ = {
 			isa = PBXGroup;
 			children = (
+				AAAD9CE325FC3EAA00379A02 /* DriverVisionApp.entitlements */,
 				AA8A26D125E8D982009F4133 /* HomeView Controllers */,
 				AAFD103625D8348C0063B371 /* JSON Files */,
 				AA8AA45125D74F1A006D3468 /* ScrollViewControllers */,
@@ -719,8 +721,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DriverVisionApp/DriverVisionApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HLK8C3SR2N;
+				DEVELOPMENT_TEAM = Z52Q72NLDZ;
 				INFOPLIST_FILE = DriverVisionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -739,8 +742,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DriverVisionApp/DriverVisionApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HLK8C3SR2N;
+				DEVELOPMENT_TEAM = Z52Q72NLDZ;
 				INFOPLIST_FILE = DriverVisionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -759,7 +763,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52Q72NLDZ;
 				INFOPLIST_FILE = DriverVisionAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -781,7 +787,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52Q72NLDZ;
 				INFOPLIST_FILE = DriverVisionAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -803,6 +811,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52Q72NLDZ;
 				INFOPLIST_FILE = DriverVisionAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -823,6 +832,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z52Q72NLDZ;
 				INFOPLIST_FILE = DriverVisionAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
