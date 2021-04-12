@@ -23,7 +23,7 @@ class ParentViewController: UIViewController {
     }
 
     @IBAction func nextMove(_ sender: Any) {
-        let pre_vc = self.storyboard?.instantiateViewController(identifier: "parent_vc") as! ParentHomeViewController
+        let pre_vc = self.storyboard?.instantiateViewController(identifier: "g_vc") as! PreViewController
         self.view.window?.rootViewController = pre_vc
         self.view.window?.makeKeyAndVisible()
     }

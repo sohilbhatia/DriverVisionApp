@@ -39,10 +39,10 @@ class PreViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        
+        overrideUserInterfaceStyle = .light
         var aniv =  AnimationView(name: "car")
         super.viewDidLoad()
-        mainTitle.text = "Hello " + name + "!"
+        //mainTitle.text = "Hello " + name + "!"
         let date = Date()
         mainTitle.font = UIFont(name: "Avenir", size: 40)
         dateTxt.font = UIFont(name: "Avenir", size: 18)

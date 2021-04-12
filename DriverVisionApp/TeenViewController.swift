@@ -8,11 +8,19 @@
 import UIKit
 import Firebase
 import Lottie
+import SwiftyUserDefaults
 
 import CBFlashyTabBarController
 
 var myCode = String()
 var key = String()
+/*
+extension DefaultsKeys {
+    static let parentCode = DefaultsKey<String?>{ .init("parentCode") }
+    static let islogin = DefaultsKey<Bool?> { .init("islogin") }
+}
+*/
+var defaults = UserDefaults.standard
 class TeenViewController: UIViewController {
     var animationV =  AnimationView(name: "lf30_editor_sftuxhry")
     var ref: DatabaseReference!
@@ -29,45 +37,15 @@ class TeenViewController: UIViewController {
     }
     
     @IBAction func nextClicked(_ sender: Any) {
-        
+    
+        UserDefaults.standard.set(self.codeField.text!, forKey: "code")
+        UserDefaults.standard.synchronize()
         let pre_vc = self.storyboard?.instantiateViewController(identifier: "root_vc") as! RootViewController
         self.view.window?.rootViewController = pre_vc
         self.view.window?.makeKeyAndVisible()
         print(codeField.text!)
         myCode = codeField.text!
         
-        /*
-        let mapsVC = MapViewController()
-        mapsVC.tabBarItem = UITabBarItem(title: "Map", image: #imageLiteral(resourceName: "3440906-48"), tag: 0)
-        let settingsVC = SettingsViewController()
-        settingsVC.tabBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "118603-48"), tag: 0)
-        
-        //settingsVC.inverseColor()
-        
-        mapsVC.view.layoutIfNeeded()
-        settingsVC.view.layoutIfNeeded()
-
-        let tabBarController = CBFlashyTabBarController()
-        tabBarController.viewControllers = [mapsVC, settingsVC]
-//        navigationController?.pushViewController(tabBarController, animated: true)
-        self.view.window?.rootViewController = tabBarController
-        self.view.window?.makeKeyAndVisible()
- */
-        //self.present(tabBarController, animated: true, completion: nil)
-        /*
-        if let tabbar = (storyboard!.instantiateViewController(withIdentifier: "tab_vc") as? UITabBarController) {
-            tabbar.modalTransitionStyle = .crossDissolve
-            self.view.window?.rootViewController = tabbar
-            self.view.window?.makeKeyAndVisible()
-        }
- */
-    
-        
-        
-/*
-        self.view.window?.rootViewController = next_vc
-        self.view.window?.makeKeyAndVisible()
- */
 
     }
     
@@ -81,7 +59,10 @@ class TeenViewController: UIViewController {
         codeField.textColor = UIColor.white
         codeField.tintColor = .white
         codeField.textAlignment = .center
+        
+        self.codeField.autocapitalizationType = UITextAutocapitalizationType.allCharacters
         codeField.attributedPlaceholder = NSAttributedString(string: "Ex. A243", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white.withAlphaComponent(0.5)])
+        
         let bottomLine = CALayer()
         bottomLine.frame = CGRect(x: 0.0, y: codeField.frame.height+2, width: codeField.frame.width, height: 1.0)
         bottomLine.backgroundColor = UIColor.white.cgColor
@@ -101,26 +82,17 @@ class TeenViewController: UIViewController {
         
         self.hideKeyboardWhenTappedAround()
         
-        //let animationV =  AnimationView(name: "lf30_editor_sftuxhry")
-        /*
-        animationV.contentMode = .scaleAspectFit
-        self.connectV.addSubview(animationV)
-        animationV.frame = self.connectV.bounds
-        animationV.loopMode = .loop
-        
-        animationV.play()
-        */
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func submitClicked(_ sender: Any) {
         print(self.codeField.text!)
         ref = Database.database().reference()
         //let strSearch = "K"
+        let userCode = (self.codeField.text)!.uppercased()
         ref.child("codes").observe(.value, with: { [self](snapshot) in
             if let dictionary = snapshot.value as? [String: Any] {
                 print(dictionary)
+                
                 if ((dictionary[self.codeField.text!]) == nil) {
                     let animation = CABasicAnimation(keyPath: "position")
                     animation.duration = 0.07
@@ -135,12 +107,8 @@ class TeenViewController: UIViewController {
                     let final = dictionary[self.codeField.text!] as! [String:Any]
                     
                     if (((final["code"]) as! String) == self.codeField.text!) {
-                        /*
-                        let checkMarkAnimation =  AnimationView(name: "lf30_editor_q50j0emu")
-                        connectV.contentMode = .scaleAspectFit
-                        self.connectV.addSubview(checkMarkAnimation)
-                        checkMarkAnimation.frame = self.AVView.bounds
-                        */
+                        UserDefaults.standard.set(self.codeField.text!, forKey: "code")
+                        UserDefaults.standard.synchronize()
                         animationV = AnimationView(name: "lf30_editor_q50j0emu")
                         animationV.contentMode = .scaleAspectFit
                         self.connectV.addSubview(animationV)
@@ -150,73 +118,17 @@ class TeenViewController: UIViewController {
                         nextButton.isEnabled = true
                         
                        
-                        //checkMarkAnimation.play()
-                        // the code you put here will be compiled once the animation finishes
-                        //let next_vc = self.storyboard?.instantiateViewController(identifier: "map_vc") as!
-                        //MapViewController
-                        //self.view.window?.rootViewController = next_vc
-                        //self.view.window?.makeKeyAndVisible()
-                            
-                       
                     }
-                    /*
-                    if (animationV.isAnimationPlaying == true) {
-                        myCode = self.codeField.text!
-                        self.nextButton.isEnabled = true
-                        
-                        
-                            
-                            
-                    }
- */
-                        //self.invalidLabel.text = "valid code!"
-                        
-                        
-                        
-                        
-                        
-                    
-                    //sleep(5)
                     
                     
                 }
                 
-                
-                
-                
-                /*
-                for i in dictionary {
-                    let code = dictionary[self.codeField.text!]
-                    let final = code["code"] as! String
-                    if (code == self.codeField.text) {
-                        self.invalidLabel.text = "valid code!"
-                        myCode = self.codeField.text!
-                        self.nextButton.isEnabled = true
-                        
-                        
-                    }
-                    else {
-                        self.invalidLabel.text = "invalid code!"
-                    }
-                }
- */
                 
             }
             
         })
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 extension UITextField{
@@ -240,3 +152,4 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+

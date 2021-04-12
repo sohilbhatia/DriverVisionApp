@@ -34,7 +34,7 @@ struct Course {
         
     }
 }
-
+var newLoc = CLLocation()
     
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
@@ -42,20 +42,29 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet var map: MKMapView!
     @IBOutlet var speed: UILabel!
     @IBOutlet var speedlimit: UILabel!
+    @IBOutlet var displaySpeed: UILabel!
+    @IBOutlet var displayLimit: UILabel!
+    
     var SPDlim = Int()
     let manager = CLLocationManager()
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[0]
         
+        
         guard let mostRecentLocation = locations.last else {
             return
         }
         let annotation = MKPointAnnotation()
         annotation.coordinate = mostRecentLocation.coordinate
-        
-        
-        
+        manager.requestAlwaysAuthorization()
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        manager.allowsBackgroundLocationUpdates = true
+        manager.startUpdatingLocation()
+        manager.startMonitoringSignificantLocationChanges()
+        //newLoc = location.speed
+        newLoc = location
         
         let span = MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)
         let myLocation = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
@@ -67,7 +76,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         if (finalSpeed < 0) {
             finalSpeed = 0
         }
-        speed.text = "Current Speed: " + String(round((speedTest * 2.24)*10) / 10) + " MPH"
+        //speed.text = "Current Speed: " + String(round((speedTest * 2.24)*10) / 10) + " MPH"
+        displaySpeed.text = String(round((speedTest * 2.24)*10) / 10)
+        
+        //let newLoc = String(location)
         
         let jsonUrlString = "https://dev.virtualearth.net/REST/v1/Routes/SnapToRoad?points=\(location.coordinate.latitude),\(location.coordinate.longitude)&includeTruckSpeedLimit=true&IncludeSpeedLimit=true&speedUnit=MPH&travelMode=driving&key=AgqimMOPfDALglebExqcY5DFuVFrl1TE75EPl6jpYZvKlHR3oMQCDjGxgok-3Dwb"
         guard let url = URL(string: jsonUrlString) else { return }
@@ -101,8 +113,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             
             
         }.resume()
-        speedlimit.text = "Speed Limit: " + String(speedlim) + " MPH"
-        
+        //speedlimit.text = "Speed Limit: " + String(speedlim) + " MPH"
+        displayLimit.text = String(speedlim)
+        print(location)
         if(((Int(speedlim) / 2) - Int(speedTest)) < 0) {
             //print("Status: Alert")
             
@@ -151,7 +164,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                     
                     UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
                     countStill = 0
-                    self.ref.child("codes").child(myCode).child("messages").setValue(["message": "Your teenager went over the speedlimit " + String(Int(overSpeedPercentage)) + "% of the time."])
+                    if (isRegDriver == false) {
+                        self.ref.child("codes").child(myCode).child("messages").setValue(["message": "Your teenager went over the speedlimit " + String(Int(overSpeedPercentage)) + "% of the time."])
+                    }
+                    
+                    
                     //numberOfAlerts.removeAll()
                 }
             }
@@ -247,12 +264,20 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
  */
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        overrideUserInterfaceStyle = .light
+        
+        
+        map.layer.cornerRadius = 20.0;
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
         manager.allowsBackgroundLocationUpdates = true
         ref = Database.database().reference()
+        
+        UserDefaults.standard.set(true, forKey: "codeValid")
+        UserDefaults.standard.synchronize()
         
         
         DispatchQueue.global(qos: .background).async {
@@ -262,6 +287,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                 print("This is run on the main queue, after the previous code in outer block")
             }
         }
+        
         
         
         
@@ -281,4 +307,5 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     */
 
 }
+    
 }
