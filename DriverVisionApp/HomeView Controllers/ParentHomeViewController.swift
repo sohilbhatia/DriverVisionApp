@@ -12,10 +12,12 @@ class ParentHomeViewController: UIViewController {
     var ref: DatabaseReference!
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.orange
+        /*
         ref = Database.database().reference()
         DispatchQueue.global(qos: .background).async { [self] in
-            print(finalCode)
-            print("heyy")
+            //print(finalCode)
+            //print("heyy")
             
             ref.child("codes").child(finalCode).child("messages").observe(.childAdded, with: {(snapshot) in
                 print("COUNT ACTIVATED!!!")
@@ -45,7 +47,7 @@ class ParentHomeViewController: UIViewController {
                 print("This is run on the main queue, after the previous code in outer block")
             }
         }
-       
+       */
     }
     
 

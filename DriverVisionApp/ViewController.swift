@@ -24,18 +24,10 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        UserDefaults.standard.setValue("AG32", forKey: "code")
-        UserDefaults.standard.synchronize()
-        print("HERE IS THE DEFAULT:")
-        print(defaults.value(forKey: "code")!)
-        self.view.layoutIfNeeded()
-        if (UserDefaults.standard.bool(forKey: "codeValid") == true) {
-            print("FRANCHISE")
-            let mapC = self.storyboard?.instantiateViewController(identifier: "map_vc") as! MapViewController
-            self.view.window?.rootViewController = mapC
-            self.view.window?.makeKeyAndVisible()
-        }
- 
+        let key = UserDefaults.standard.value(forKey: "code")
+        //print(key!)
+        UserDefaults.standard.setValue("check", forKey: "code")
+        
         teenageButton.backgroundColor = UIColor.white
         teenageButton.layer.cornerRadius = 25.0
         teenageButton.tintColor = UIColor.white

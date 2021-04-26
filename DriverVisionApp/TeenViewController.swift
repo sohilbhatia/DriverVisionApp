@@ -37,9 +37,7 @@ class TeenViewController: UIViewController {
     }
     
     @IBAction func nextClicked(_ sender: Any) {
-    
-        UserDefaults.standard.set(self.codeField.text!, forKey: "code")
-        UserDefaults.standard.synchronize()
+
         let pre_vc = self.storyboard?.instantiateViewController(identifier: "root_vc") as! RootViewController
         self.view.window?.rootViewController = pre_vc
         self.view.window?.makeKeyAndVisible()
@@ -54,6 +52,8 @@ class TeenViewController: UIViewController {
     @IBOutlet var invalidLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         codeField.font = UIFont(name: "Avenir", size: 29)
         codeField.textColor = UIColor.white
@@ -107,8 +107,6 @@ class TeenViewController: UIViewController {
                     let final = dictionary[self.codeField.text!] as! [String:Any]
                     
                     if (((final["code"]) as! String) == self.codeField.text!) {
-                        UserDefaults.standard.set(self.codeField.text!, forKey: "code")
-                        UserDefaults.standard.synchronize()
                         animationV = AnimationView(name: "lf30_editor_q50j0emu")
                         animationV.contentMode = .scaleAspectFit
                         self.connectV.addSubview(animationV)
@@ -116,6 +114,7 @@ class TeenViewController: UIViewController {
                         animationV.play()
                         self.ref.child("codes").child(self.codeField.text!).updateChildValues(["teenToken": Messaging.messaging().fcmToken!])
                         nextButton.isEnabled = true
+                        UserDefaults.standard.set(true, forKey: "isLogged")
                         
                        
                     }

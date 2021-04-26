@@ -31,8 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
-    
-    
+
     
     if(UIApplication.shared.backgroundRefreshStatus == UIBackgroundRefreshStatus.available){
             print("yessssss")
@@ -108,12 +107,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 
     // [END register_for_notifications]
     //check()
+    //checkDefault()
     return true
   }
-    
-    func check() {
-        if UserDefaults.standard.value(forKey: "code") != nil {
-            
+    func checkDefault() {
+        if (UserDefaults.standard.bool(forKey: "isLogged") == true) {
+            print("LoggedIn is true")
+            let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "parent_vc") as! ParentHomeViewController
+            let navVC = UINavigationController(rootViewController: vc)
+            let share = UIApplication.shared.delegate as? AppDelegate
+            share?.window?.rootViewController = navVC
+            share?.window?.makeKeyAndVisible()
         }
     }
     
