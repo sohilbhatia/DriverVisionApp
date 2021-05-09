@@ -38,6 +38,8 @@
 		AA8AA44825D74F05006D3468 /* NotiScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8AA44725D74F05006D3468 /* NotiScrollViewController.swift */; };
 		AA8AA44D25D74F14006D3468 /* SafeScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8AA44C25D74F14006D3468 /* SafeScrollViewController.swift */; };
 		AA94957B25987F96000A537B /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA94957A25987F96000A537B /* ParentViewController.swift */; };
+		AA949CD72639362100C6BAF0 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA949CD62639362100C6BAF0 /* LaunchViewController.swift */; };
+		AA949CDC2639368500C6BAF0 /* lf30_editor_eflvqs1l.json in Resources */ = {isa = PBXBuildFile; fileRef = AA949CDB2639368500C6BAF0 /* lf30_editor_eflvqs1l.json */; };
 		AAA6D7BD25C932240059C676 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA6D7BC25C932240059C676 /* NameViewController.swift */; };
 		AADD58A7259A9F90004F054B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD58A6259A9F90004F054B /* MapViewController.swift */; };
 		AAE796B125B291F2005513A9 /* lf30_editor_xrhtiztp.json in Resources */ = {isa = PBXBuildFile; fileRef = AAE796B025B291F2005513A9 /* lf30_editor_xrhtiztp.json */; };
@@ -108,6 +110,8 @@
 		AA8AA44725D74F05006D3468 /* NotiScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiScrollViewController.swift; sourceTree = "<group>"; };
 		AA8AA44C25D74F14006D3468 /* SafeScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeScrollViewController.swift; sourceTree = "<group>"; };
 		AA94957A25987F96000A537B /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		AA949CD62639362100C6BAF0 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		AA949CDB2639368500C6BAF0 /* lf30_editor_eflvqs1l.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_eflvqs1l.json; path = ../../../Downloads/lf30_editor_eflvqs1l.json; sourceTree = "<group>"; };
 		AAA6D7BC25C932240059C676 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		AAAD9CE325FC3EAA00379A02 /* DriverVisionApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DriverVisionApp.entitlements; sourceTree = "<group>"; };
 		AADD58A6259A9F90004F054B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +208,7 @@
 				AA1F4FF8259874F60074ED79 /* ViewController.swift */,
 				AA94957A25987F96000A537B /* ParentViewController.swift */,
 				AA1F4FFA259874F60074ED79 /* Main.storyboard */,
+				AA949CD62639362100C6BAF0 /* LaunchViewController.swift */,
 				AA8AA43D25D7457D006D3468 /* RootViewController.swift */,
 				AA83AE8425CA8B9700174945 /* PreViewController.swift */,
 				AAA6D7BC25C932240059C676 /* NameViewController.swift */,
@@ -222,6 +227,7 @@
 				AA81A7DC25B2AA950007ACC8 /* lf30_editor_sftuxhry.json */,
 				AA4FFE4725DF7A820004AD64 /* lf30_editor_fpivp6yy.json */,
 				AA4FFE4C25DF7B3C0004AD64 /* lf30_editor_wmagglsb.json */,
+				AA949CDB2639368500C6BAF0 /* lf30_editor_eflvqs1l.json */,
 				AAFD102E25D8347B0063B371 /* arrows.json */,
 				AA663E3A25CB940F0074626D /* mycar.json */,
 				AA663E3525CB8A8C0074626D /* car.json */,
@@ -397,6 +403,7 @@
 				AA663E3B25CB940F0074626D /* mycar.json in Resources */,
 				AA1F4FFE259874F80074ED79 /* Assets.xcassets in Resources */,
 				AA19EF6625B22E290007D821 /* lf30_editor_q50j0emu.json in Resources */,
+				AA949CDC2639368500C6BAF0 /* lf30_editor_eflvqs1l.json in Resources */,
 				AA4FFE4D25DF7B3C0004AD64 /* lf30_editor_wmagglsb.json in Resources */,
 				AA0612A725D78D170016975C /* lf30_editor_stpykcmy.json in Resources */,
 				AA1F4FFC259874F60074ED79 /* Main.storyboard in Resources */,
@@ -545,6 +552,7 @@
 				AADD58A7259A9F90004F054B /* MapViewController.swift in Sources */,
 				AA64945725BEA9E5004FEA06 /* SettingsViewController.swift in Sources */,
 				AAA6D7BD25C932240059C676 /* NameViewController.swift in Sources */,
+				AA949CD72639362100C6BAF0 /* LaunchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

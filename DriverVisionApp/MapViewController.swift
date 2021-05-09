@@ -15,6 +15,8 @@ import SwiftUI
 
 var overSpeedPercentage = 0.0
 var trynow = 0.0
+var continueAlerts = false
+var countStill = 0
 struct Course {
     let first: Array<Any>
     let second: Dictionary<String, Any>
@@ -115,64 +117,95 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         }.resume()
         //speedlimit.text = "Speed Limit: " + String(speedlim) + " MPH"
         displayLimit.text = String(speedlim)
-        print(location)
-        if(((Int(speedlim) / 2) - Int(speedTest)) < 0) {
-            //print("Status: Alert")
-            
-            //numberOfAlerts.remove(at: 1)
-            
-            numberOfAlerts.append("1")
-        }
-        else if(speedTest == 0.0) {
-            numberOfAlerts.append("STILL")
-        }
-        else {
-            //print("Status: OK")
-            //numberOfAlerts.remove(at: 0)
-            //numberOfAlerts.remove(at: 1)
-            numberOfAlerts.append("0")
-        }
         
-        var countAlert = 0
-        var countOK = 0
-        var countStill = 0
-        var countDistracted = 0
-        for i in numberOfAlerts {
-            if(i == "1") {
-                countAlert += 1
-                overSpeedPercentage = Double(countAlert) / Double(numberOfAlerts.count) * 100
-                countStill = 0
-            }
-            else if(i == "0") {
-                countOK += 1
-                countStill = 0
-            }
-            else if(i == "STILL") {
-                countStill += 1
-                if(countStill >= 10) {
-                    print("COUNT AT 10 ")
-                    let content = UNMutableNotificationContent()
-                    content.title = "Drive Session Ended"
-                    content.body = "You went over the speedlimit " + String(Int(overSpeedPercentage)) + "% of the time."
-                    
-                    content.sound = UNNotificationSound.default
-                    
-                    
-                    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
-                    
-                    let request = UNNotificationRequest(identifier: "testIdentifier", content: content, trigger: trigger)
-                    
-                    UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-                    countStill = 0
-                    if (isRegDriver == false) {
-                        self.ref.child("codes").child(myCode).child("messages").setValue(["message": "Your teenager went over the speedlimit " + String(Int(overSpeedPercentage)) + "% of the time."])
-                    }
-                    
-                    
-                    //numberOfAlerts.removeAll()
-                }
-            }
+        
+        
+        print(location)
+        
+        if (speedTest > 1) {
+            print("Drive Started")
+            continueAlerts = true
+            //print("SPEED TEST - " + String(continueAlerts))
         }
+            if (continueAlerts == true) {
+                if(((Int(speedlim) / 2) - Int(speedTest)) < 0) {
+                    //print("Status: Alert")
+                    
+                    //numberOfAlerts.remove(at: 1)
+                    
+                    numberOfAlerts.append("1")
+                }
+                else if(speedTest <= 0) {
+                    numberOfAlerts.append("STILL")
+                }
+                else {
+                    //print("Status: OK")
+                    //numberOfAlerts.remove(at: 0)
+                    //numberOfAlerts.remove(at: 1)
+                    numberOfAlerts.append("0")
+                }
+                
+                var countAlert = 0
+                var countOK = 0
+                
+                
+                var countDistracted = 0
+                
+                
+                    for i in numberOfAlerts {
+                        if(i == "1") {
+                            countAlert += 1
+                            overSpeedPercentage = Double(countAlert) / Double(numberOfAlerts.count) * 100
+                            countStill = 0
+                        }
+                        else if(i == "0") {
+                            countOK += 1
+                            countStill = 0
+                        }
+                        else if(i == "STILL") {
+                            countStill += 1
+                            for i in numberOfAlerts {
+                                if (i=="1") {
+                                    if(countStill >= 20) {
+                                        print("COUNT AT 10 ")
+                                        /*
+                                        let content = UNMutableNotificationContent()
+                                        content.title = "Drive Session Ended"
+                                        content.body = "You went over the speedlimit " + String(Int(overSpeedPercentage)) + "% of the time."
+                                        
+                                        content.sound = UNNotificationSound.default
+                                        
+                                        
+                                        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+                                        
+                                        let request = UNNotificationRequest(identifier: "testIdentifier", content: content, trigger: trigger)
+                                        
+                                        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+                 */
+                                        callNoti(value: continueAlerts, speedPercentage: overSpeedPercentage)
+                                        
+                                        
+                                        continueAlerts = false
+                                        countStill = 0
+                                        //numberOfAlerts.removeAll()
+                                        
+                                        if (isRegDriver == false) {
+                                            self.ref.child("codes").child(myCode).child("messages").setValue(["message": "Your teenager went over the speedlimit " + String(Int(overSpeedPercentage)) + "% of the time."])
+                                        }
+                                        print("STILL - " + String(continueAlerts))
+                                        
+                                        
+                                    }
+                                }
+                                
+                            }
+                        
+                        }
+                            
+                        }
+                    
+                }
+        
         
     }
     //run app when
@@ -308,4 +341,22 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
 
 }
     
+}
+func callNoti(value: Bool, speedPercentage: Double) {
+    print("FROM NOTIFICATION - " + String(value))
+    if (value == true) {
+        let content = UNMutableNotificationContent()
+        content.title = "Drive Session Ended"
+        content.body = "You went over the speedlimit " + String(Int(speedPercentage)) + "% of the time."
+        
+        content.sound = UNNotificationSound.default
+        
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "testIdentifier", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
+    }
 }

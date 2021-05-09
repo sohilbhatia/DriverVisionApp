@@ -1,25 +1,23 @@
 //
-//  NotiScrollViewController.swift
+//  LaunchViewController.swift
 //  DriverVisionApp
 //
-//  Created by Sohil Bhatia on 2/12/21.
+//  Created by Sohil Bhatia on 4/27/21.
 //
 
 import UIKit
 import Lottie
-class NotiScrollViewController: UIViewController {
+class LaunchViewController: UIViewController {
 
-    @IBOutlet var notiAni: UIView!
+    @IBOutlet var openView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        var animationV =  AnimationView(name: "lf30_editor_fpivp6yy")
-        animationV = AnimationView(name: "lf30_editor_fpivp6yy")
-        animationV.contentMode = .scaleAspectFit
-        self.notiAni.addSubview(animationV)
-        animationV.frame.size.width = 5000
-        animationV.frame.size.height = 5000
-        animationV.frame = self.notiAni.bounds
         
+        var animationV =  AnimationView(name: "lf30_editor_q50j0emu")
+        animationV = AnimationView(name: "lf30_editor_q50j0emu")
+        animationV.contentMode = .scaleAspectFit
+        self.openView.addSubview(animationV)
+        animationV.frame = self.openView.bounds
         animationV.play(fromProgress: 0,
                                toProgress: 1,
                                loopMode: LottieLoopMode.loop,
@@ -30,7 +28,7 @@ class NotiScrollViewController: UIViewController {
                                     animationV.play()
                                 }
             })
-
+        
         // Do any additional setup after loading the view.
     }
     

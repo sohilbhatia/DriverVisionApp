@@ -464,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2T-Zy-ie3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5464" y="127"/>
+            <point key="canvasLocation" x="6261" y="125"/>
         </scene>
         <!--Pre View Controller-->
         <scene sceneID="jMP-uj-Doo">
@@ -622,6 +622,45 @@
             </objects>
             <point key="canvasLocation" x="3958" y="127"/>
         </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="MgV-qE-i35">
+            <objects>
+                <viewController storyboardIdentifier="launch_vc" id="JCX-ow-vGv" customClass="LaunchViewController" customModule="DriverVisionApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wcp-D9-AF0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Launch the App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYw-ua-x7x">
+                                <rect key="frame" x="56" y="81" width="303" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="41"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1F-1h-C9f">
+                                <rect key="frame" x="51" y="155" width="312" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Before starting your drive, make sure to launch the DriverVision app! Feel free to use the app in the background, and utilize other apps per usual. Terminating the app will terminate the drive session.</string>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1cf-Ck-uU7">
+                                <rect key="frame" x="61" y="340" width="302" height="406"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="20f-eH-ONQ"/>
+                        <color key="backgroundColor" red="0.1960784314" green="0.4431372549" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <outlet property="openView" destination="1cf-Ck-uU7" id="YRb-FR-Vwz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wtz-Ve-YDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4669.5652173913049" y="126.5625"/>
+        </scene>
         <!--Safe Scroll View Controller-->
         <scene sceneID="CQJ-oG-Zjg">
             <objects>
@@ -659,7 +698,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHi-Sr-WfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4655" y="125"/>
+            <point key="canvasLocation" x="5383" y="115"/>
         </scene>
     </scenes>
     <resources>
