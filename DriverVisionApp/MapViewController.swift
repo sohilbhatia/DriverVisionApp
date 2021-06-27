@@ -73,6 +73,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         let region = MKCoordinateRegion(center: myLocation, span: span)
         
         map.setRegion(region, animated: true)
+        self.map.layer.shadowColor = UIColor.black.cgColor
+        self.map.layer.shadowOpacity = 0.07
+        self.map.layer.shadowOffset = CGSize(width: 0, height: 1.1)
         self.map.showsUserLocation = true
         var finalSpeed = location.speed
         if (finalSpeed < 0) {
