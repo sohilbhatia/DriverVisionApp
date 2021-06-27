@@ -135,7 +135,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                     
                     numberOfAlerts.append("1")
                 }
-                else if(speedTest <= 0) {
+                else if(speedTest <= 1.5) {
                     numberOfAlerts.append("STILL")
                 }
                 else {
@@ -166,7 +166,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                             countStill += 1
                             for i in numberOfAlerts {
                                 if (i=="1") {
-                                    if(countStill >= 20) {
+                                    if(countStill >= 240) {
                                         print("COUNT AT 10 ")
                                         /*
                                         let content = UNMutableNotificationContent()
