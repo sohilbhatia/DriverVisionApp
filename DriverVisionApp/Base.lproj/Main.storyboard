@@ -739,8 +739,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cf-Ck-uU7">
-                                <rect key="frame" x="28" y="271" width="292" height="418.5"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1cf-Ck-uU7">
+                                <rect key="frame" x="22" y="215" width="292" height="418.5"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="20f-eH-ONQ"/>
@@ -796,8 +796,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c7C-8f-d2k">
-                                <rect key="frame" x="42" y="279" width="312" height="414"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c7C-8f-d2k">
+                                <rect key="frame" x="57" y="279" width="312" height="414"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="t3H-Dn-mIa"/>
