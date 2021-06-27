@@ -686,8 +686,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYy-Ze-yd2">
-                                <rect key="frame" x="56" y="136" width="302" height="122"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBi-gg-OiV">
+                                <rect key="frame" x="69" y="284" width="276" height="408"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYy-Ze-yd2">
+                                <rect key="frame" x="49" y="136" width="317" height="122"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="Tt5-IK-4w4"/>
                                 </constraints>
@@ -696,9 +699,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBi-gg-OiV">
-                                <rect key="frame" x="69" y="284" width="276" height="408"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kda-v9-aGc"/>
                         <color key="backgroundColor" red="0.1960784314" green="0.4431372549" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -708,7 +708,7 @@
                             <constraint firstItem="atz-cL-Clr" firstAttribute="centerX" secondItem="DYy-Ze-yd2" secondAttribute="centerX" id="bzj-Cp-uOx"/>
                             <constraint firstItem="atz-cL-Clr" firstAttribute="top" secondItem="kda-v9-aGc" secondAttribute="top" constant="27" id="hlT-7b-2kD"/>
                             <constraint firstItem="oBi-gg-OiV" firstAttribute="top" secondItem="DYy-Ze-yd2" secondAttribute="bottom" constant="26" id="hms-QP-lug"/>
-                            <constraint firstItem="DYy-Ze-yd2" firstAttribute="leading" secondItem="kda-v9-aGc" secondAttribute="leading" constant="56" id="iCf-II-81M"/>
+                            <constraint firstItem="DYy-Ze-yd2" firstAttribute="leading" secondItem="kda-v9-aGc" secondAttribute="leading" constant="49" id="iCf-II-81M"/>
                             <constraint firstItem="DYy-Ze-yd2" firstAttribute="centerX" secondItem="oBi-gg-OiV" secondAttribute="centerX" id="m3Q-cx-BzO"/>
                             <constraint firstItem="atz-cL-Clr" firstAttribute="centerX" secondItem="Pto-77-ZXq" secondAttribute="centerX" id="rAM-IX-jAM"/>
                             <constraint firstItem="DYy-Ze-yd2" firstAttribute="top" secondItem="atz-cL-Clr" secondAttribute="bottom" constant="8" id="vMK-a3-dIH"/>
@@ -720,7 +720,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nt-CP-NcV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3958" y="127"/>
+            <point key="canvasLocation" x="3957.971014492754" y="126.5625"/>
         </scene>
         <!--Launch View Controller-->
         <scene sceneID="MgV-qE-i35">
@@ -731,11 +731,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1F-1h-C9f">
-                                <rect key="frame" x="28" y="154" width="358" height="122"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="122" id="nEA-qb-9KP"/>
-                                    <constraint firstAttribute="width" secondItem="p1F-1h-C9f" secondAttribute="height" multiplier="197:61" constant="-36" id="rtn-2R-uqX"/>
-                                </constraints>
+                                <rect key="frame" x="28" y="154" width="358" height="109.5"/>
                                 <string key="text">Before starting your drive, make sure to launch the DriverVision app! Feel free to use the app in the background, and utilize other apps per usual. Terminating the app will terminate the drive session.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -751,7 +747,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cf-Ck-uU7">
-                                <rect key="frame" x="28" y="302" width="292" height="406"/>
+                                <rect key="frame" x="28" y="289.5" width="292" height="418.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.71764705880000002" blue="0.18430278359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                         </subviews>
@@ -767,7 +763,9 @@
                             <constraint firstItem="VYw-ua-x7x" firstAttribute="top" secondItem="20f-eH-ONQ" secondAttribute="top" constant="37" id="JnH-5J-r3n"/>
                             <constraint firstItem="20f-eH-ONQ" firstAttribute="bottom" secondItem="1cf-Ck-uU7" secondAttribute="bottom" constant="154" id="N7D-9P-RIa"/>
                             <constraint firstItem="1cf-Ck-uU7" firstAttribute="centerX" secondItem="Wcp-D9-AF0" secondAttribute="centerX" constant="-33" id="S0e-qv-gTK"/>
+                            <constraint firstItem="20f-eH-ONQ" firstAttribute="trailing" secondItem="p1F-1h-C9f" secondAttribute="trailing" constant="28" id="S5S-9g-VWy"/>
                             <constraint firstItem="1cf-Ck-uU7" firstAttribute="leading" secondItem="20f-eH-ONQ" secondAttribute="leading" constant="28" id="XNt-5R-Q1K"/>
+                            <constraint firstItem="p1F-1h-C9f" firstAttribute="leading" secondItem="20f-eH-ONQ" secondAttribute="leading" constant="28" id="eKD-AR-XVx"/>
                             <constraint firstItem="VYw-ua-x7x" firstAttribute="centerX" secondItem="p1F-1h-C9f" secondAttribute="centerX" id="l23-cD-72i"/>
                             <constraint firstItem="VYw-ua-x7x" firstAttribute="centerX" secondItem="Wcp-D9-AF0" secondAttribute="centerX" id="miS-on-oFy"/>
                             <constraint firstItem="p1F-1h-C9f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="20f-eH-ONQ" secondAttribute="leading" id="rvp-xa-1oK"/>
@@ -780,7 +778,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtz-Ve-YDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4669.5652173913049" y="126.5625"/>
+            <point key="canvasLocation" x="4671.0144927536239" y="118.52678571428571"/>
         </scene>
         <!--Safe Scroll View Controller-->
         <scene sceneID="CQJ-oG-Zjg">
