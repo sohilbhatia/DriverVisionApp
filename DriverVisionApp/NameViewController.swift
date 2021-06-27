@@ -43,6 +43,7 @@ class NameViewController: UIViewController {
     @IBAction func nxtClick(_ sender: Any) {
         name = nameField.text!
         print(defaults.value(forKey: "code")!)
+        UserDefaults.standard.set(true, forKey: "isLogged")
         let g_vc = self.storyboard?.instantiateViewController(identifier: "map_vc") as! MapViewController
         self.view.window?.rootViewController = g_vc
         self.view.window?.makeKeyAndVisible()
