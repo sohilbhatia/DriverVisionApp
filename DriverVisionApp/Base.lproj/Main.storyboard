@@ -285,8 +285,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hE-aJ-7xQ">
-                                <rect key="frame" x="98" y="580" width="219" height="63"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hE-aJ-7xQ">
+                                <rect key="frame" x="97.5" y="580" width="219" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="OWX-LB-0oe"/>
+                                    <constraint firstAttribute="width" constant="219" id="hUE-dn-hyL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.14901960780000001" green="0.31764705879999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -406,7 +410,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="33" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -415,7 +419,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="403-3w-duA">
-                                <rect key="frame" x="37" y="563" width="184" height="61"/>
+                                <rect key="frame" x="37" y="563" width="260" height="61"/>
                                 <attributedString key="attributedText">
                                     <fragment content="miles per hour">
                                         <attributes>
@@ -435,7 +439,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="33" name="Avenir-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -504,7 +508,7 @@
                             <constraint firstItem="cR4-o1-zC2" firstAttribute="trailing" secondItem="gj2-iE-nwD" secondAttribute="trailing" constant="218" id="Et3-k5-dRO"/>
                             <constraint firstItem="cR4-o1-zC2" firstAttribute="trailing" secondItem="a1D-nw-KXR" secondAttribute="trailing" constant="15" id="GjX-Q2-TVH"/>
                             <constraint firstItem="cR4-o1-zC2" firstAttribute="trailing" secondItem="Mog-4t-DZp" secondAttribute="trailing" constant="146" id="IG3-7R-thK"/>
-                            <constraint firstItem="cR4-o1-zC2" firstAttribute="trailing" secondItem="403-3w-duA" secondAttribute="trailing" constant="193" id="JOU-9j-VCa"/>
+                            <constraint firstItem="cR4-o1-zC2" firstAttribute="trailing" secondItem="403-3w-duA" secondAttribute="trailing" constant="117" id="JOU-9j-VCa"/>
                             <constraint firstItem="cR4-o1-zC2" firstAttribute="trailing" secondItem="KKk-Vh-rWs" secondAttribute="trailing" constant="240" id="QDd-hP-faN"/>
                             <constraint firstItem="403-3w-duA" firstAttribute="leading" secondItem="UeI-Ta-2QG" secondAttribute="leading" id="RhG-sM-ubn"/>
                             <constraint firstItem="0JJ-jo-VML" firstAttribute="leading" secondItem="gj2-iE-nwD" secondAttribute="leading" id="W4L-wL-1Lo"/>
