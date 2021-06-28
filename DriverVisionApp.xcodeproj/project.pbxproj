@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		22622E847C670B9C079957CD /* Pods_DriverVisionAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1863F4EC28AF0DC73C3D2695 /* Pods_DriverVisionAppTests.framework */; };
 		37C0DE806D1E6272D0D13B18 /* Pods_DriverVisionApp_DriverVisionAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE4B6E9E4A27F26ACAA7C66 /* Pods_DriverVisionApp_DriverVisionAppUITests.framework */; };
+		73D39DB126892E92002CFD2B /* lf30_editor_eflvqs1l.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DA426892E91002CFD2B /* lf30_editor_eflvqs1l.json */; };
+		73D39DB226892E92002CFD2B /* arrows.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DA526892E91002CFD2B /* arrows.json */; };
+		73D39DB326892E92002CFD2B /* lf30_editor_dlt2o6em.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DA626892E91002CFD2B /* lf30_editor_dlt2o6em.json */; };
+		73D39DB426892E92002CFD2B /* lf30_editor_46ulwchd.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DA726892E91002CFD2B /* lf30_editor_46ulwchd.json */; };
+		73D39DB526892E92002CFD2B /* lf30_editor_wmagglsb.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DA826892E91002CFD2B /* lf30_editor_wmagglsb.json */; };
+		73D39DB626892E92002CFD2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DA926892E91002CFD2B /* GoogleService-Info.plist */; };
+		73D39DB726892E92002CFD2B /* lf30_editor_stpykcmy.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DAA26892E91002CFD2B /* lf30_editor_stpykcmy.json */; };
+		73D39DB826892E92002CFD2B /* lf30_editor_q50j0emu.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DAB26892E91002CFD2B /* lf30_editor_q50j0emu.json */; };
+		73D39DB926892E92002CFD2B /* lf30_editor_xrhtiztp.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DAC26892E91002CFD2B /* lf30_editor_xrhtiztp.json */; };
+		73D39DBA26892E92002CFD2B /* lf30_editor_sftuxhry.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DAD26892E91002CFD2B /* lf30_editor_sftuxhry.json */; };
+		73D39DBB26892E92002CFD2B /* lf30_editor_fpivp6yy.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DAE26892E91002CFD2B /* lf30_editor_fpivp6yy.json */; };
+		73D39DBC26892E92002CFD2B /* car.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DAF26892E91002CFD2B /* car.json */; };
+		73D39DBD26892E92002CFD2B /* mycar.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DB026892E91002CFD2B /* mycar.json */; };
+		73D39DE326895D12002CFD2B /* phone.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DE226895D12002CFD2B /* phone.json */; };
 		85DF74B17C5A6CCB801964D5 /* Pods_DriverVisionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B297FACE5930014D0C71595E /* Pods_DriverVisionApp.framework */; };
-		AA0612A625D78D170016975C /* lf30_editor_46ulwchd.json in Resources */ = {isa = PBXBuildFile; fileRef = AA0612A325D78D170016975C /* lf30_editor_46ulwchd.json */; };
-		AA0612A725D78D170016975C /* lf30_editor_stpykcmy.json in Resources */ = {isa = PBXBuildFile; fileRef = AA0612A425D78D170016975C /* lf30_editor_stpykcmy.json */; };
-		AA0612A825D78D170016975C /* lf30_editor_dlt2o6em.json in Resources */ = {isa = PBXBuildFile; fileRef = AA0612A525D78D170016975C /* lf30_editor_dlt2o6em.json */; };
-		AA19EF6625B22E290007D821 /* lf30_editor_q50j0emu.json in Resources */ = {isa = PBXBuildFile; fileRef = AA19EF6525B22E290007D821 /* lf30_editor_q50j0emu.json */; };
 		AA1F4FF5259874F60074ED79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F4FF4259874F60074ED79 /* AppDelegate.swift */; };
 		AA1F4FF7259874F60074ED79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F4FF6259874F60074ED79 /* SceneDelegate.swift */; };
 		AA1F4FF9259874F60074ED79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F4FF8259874F60074ED79 /* ViewController.swift */; };
@@ -22,16 +32,10 @@
 		AA1F5001259874F80074ED79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1F4FFF259874F80074ED79 /* LaunchScreen.storyboard */; };
 		AA1F500C259874F80074ED79 /* DriverVisionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F500B259874F80074ED79 /* DriverVisionAppTests.swift */; };
 		AA1F5017259874F80074ED79 /* DriverVisionAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F5016259874F80074ED79 /* DriverVisionAppUITests.swift */; };
-		AA1F5028259875E30074ED79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA1F5027259875E30074ED79 /* GoogleService-Info.plist */; };
 		AA4E2B182599328900844AB9 /* TeenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4E2B172599328900844AB9 /* TeenViewController.swift */; };
 		AA4E2B1D25999C9F00844AB9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4E2B1C25999C9F00844AB9 /* HomeViewController.swift */; };
 		AA4E2B262599CF9500844AB9 /* ParentHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4E2B252599CF9500844AB9 /* ParentHomeViewController.swift */; };
-		AA4FFE4825DF7A820004AD64 /* lf30_editor_fpivp6yy.json in Resources */ = {isa = PBXBuildFile; fileRef = AA4FFE4725DF7A820004AD64 /* lf30_editor_fpivp6yy.json */; };
-		AA4FFE4D25DF7B3C0004AD64 /* lf30_editor_wmagglsb.json in Resources */ = {isa = PBXBuildFile; fileRef = AA4FFE4C25DF7B3C0004AD64 /* lf30_editor_wmagglsb.json */; };
 		AA64945725BEA9E5004FEA06 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA64945625BEA9E5004FEA06 /* SettingsViewController.swift */; };
-		AA663E3625CB8A8C0074626D /* car.json in Resources */ = {isa = PBXBuildFile; fileRef = AA663E3525CB8A8C0074626D /* car.json */; };
-		AA663E3B25CB940F0074626D /* mycar.json in Resources */ = {isa = PBXBuildFile; fileRef = AA663E3A25CB940F0074626D /* mycar.json */; };
-		AA81A7DD25B2AA950007ACC8 /* lf30_editor_sftuxhry.json in Resources */ = {isa = PBXBuildFile; fileRef = AA81A7DC25B2AA950007ACC8 /* lf30_editor_sftuxhry.json */; };
 		AA83AE8525CA8B9700174945 /* PreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA83AE8425CA8B9700174945 /* PreViewController.swift */; };
 		AA8AA43E25D7457D006D3468 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8AA43D25D7457D006D3468 /* RootViewController.swift */; };
 		AA8AA44325D74EF2006D3468 /* SpeedScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8AA44225D74EF2006D3468 /* SpeedScrollViewController.swift */; };
@@ -39,11 +43,8 @@
 		AA8AA44D25D74F14006D3468 /* SafeScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8AA44C25D74F14006D3468 /* SafeScrollViewController.swift */; };
 		AA94957B25987F96000A537B /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA94957A25987F96000A537B /* ParentViewController.swift */; };
 		AA949CD72639362100C6BAF0 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA949CD62639362100C6BAF0 /* LaunchViewController.swift */; };
-		AA949CDC2639368500C6BAF0 /* lf30_editor_eflvqs1l.json in Resources */ = {isa = PBXBuildFile; fileRef = AA949CDB2639368500C6BAF0 /* lf30_editor_eflvqs1l.json */; };
 		AAA6D7BD25C932240059C676 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA6D7BC25C932240059C676 /* NameViewController.swift */; };
 		AADD58A7259A9F90004F054B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADD58A6259A9F90004F054B /* MapViewController.swift */; };
-		AAE796B125B291F2005513A9 /* lf30_editor_xrhtiztp.json in Resources */ = {isa = PBXBuildFile; fileRef = AAE796B025B291F2005513A9 /* lf30_editor_xrhtiztp.json */; };
-		AAFD102F25D8347B0063B371 /* arrows.json in Resources */ = {isa = PBXBuildFile; fileRef = AAFD102E25D8347B0063B371 /* arrows.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,12 +68,22 @@
 		1863F4EC28AF0DC73C3D2695 /* Pods_DriverVisionAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DriverVisionAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		470525E10E7E2ACBF7463560 /* Pods-DriverVisionApp-DriverVisionAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriverVisionApp-DriverVisionAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DriverVisionApp-DriverVisionAppUITests/Pods-DriverVisionApp-DriverVisionAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		57D924B43CA803C4266E2567 /* Pods-DriverVisionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriverVisionApp.release.xcconfig"; path = "Target Support Files/Pods-DriverVisionApp/Pods-DriverVisionApp.release.xcconfig"; sourceTree = "<group>"; };
+		73D39DA426892E91002CFD2B /* lf30_editor_eflvqs1l.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_eflvqs1l.json; path = "../../../Downloads/needed files/lf30_editor_eflvqs1l.json"; sourceTree = "<group>"; };
+		73D39DA526892E91002CFD2B /* arrows.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = arrows.json; path = "../../../Downloads/needed files/arrows.json"; sourceTree = "<group>"; };
+		73D39DA626892E91002CFD2B /* lf30_editor_dlt2o6em.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_dlt2o6em.json; path = "../../../Downloads/needed files/lf30_editor_dlt2o6em.json"; sourceTree = "<group>"; };
+		73D39DA726892E91002CFD2B /* lf30_editor_46ulwchd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_46ulwchd.json; path = "../../../Downloads/needed files/lf30_editor_46ulwchd.json"; sourceTree = "<group>"; };
+		73D39DA826892E91002CFD2B /* lf30_editor_wmagglsb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_wmagglsb.json; path = "../../../Downloads/needed files/lf30_editor_wmagglsb.json"; sourceTree = "<group>"; };
+		73D39DA926892E91002CFD2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/needed files/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		73D39DAA26892E91002CFD2B /* lf30_editor_stpykcmy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_stpykcmy.json; path = "../../../Downloads/needed files/lf30_editor_stpykcmy.json"; sourceTree = "<group>"; };
+		73D39DAB26892E91002CFD2B /* lf30_editor_q50j0emu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_q50j0emu.json; path = "../../../Downloads/needed files/lf30_editor_q50j0emu.json"; sourceTree = "<group>"; };
+		73D39DAC26892E91002CFD2B /* lf30_editor_xrhtiztp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_xrhtiztp.json; path = "../../../Downloads/needed files/lf30_editor_xrhtiztp.json"; sourceTree = "<group>"; };
+		73D39DAD26892E91002CFD2B /* lf30_editor_sftuxhry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_sftuxhry.json; path = "../../../Downloads/needed files/lf30_editor_sftuxhry.json"; sourceTree = "<group>"; };
+		73D39DAE26892E91002CFD2B /* lf30_editor_fpivp6yy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_fpivp6yy.json; path = "../../../Downloads/needed files/lf30_editor_fpivp6yy.json"; sourceTree = "<group>"; };
+		73D39DAF26892E91002CFD2B /* car.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = car.json; path = "../../../Downloads/needed files/car.json"; sourceTree = "<group>"; };
+		73D39DB026892E91002CFD2B /* mycar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mycar.json; path = "../../../Downloads/needed files/mycar.json"; sourceTree = "<group>"; };
+		73D39DE226895D12002CFD2B /* phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = phone.json; path = ../../../Downloads/phone.json; sourceTree = "<group>"; };
 		797FBACA3CF8695210AD445F /* Pods-DriverVisionAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriverVisionAppTests.release.xcconfig"; path = "Target Support Files/Pods-DriverVisionAppTests/Pods-DriverVisionAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		A9DDD7D21925FEB77B2C5FEB /* Pods-DriverVisionAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriverVisionAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DriverVisionAppTests/Pods-DriverVisionAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AA0612A325D78D170016975C /* lf30_editor_46ulwchd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_46ulwchd.json; path = ../../../Downloads/lf30_editor_46ulwchd.json; sourceTree = "<group>"; };
-		AA0612A425D78D170016975C /* lf30_editor_stpykcmy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_stpykcmy.json; path = ../../../Downloads/lf30_editor_stpykcmy.json; sourceTree = "<group>"; };
-		AA0612A525D78D170016975C /* lf30_editor_dlt2o6em.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_dlt2o6em.json; path = ../../../Downloads/lf30_editor_dlt2o6em.json; sourceTree = "<group>"; };
-		AA19EF6525B22E290007D821 /* lf30_editor_q50j0emu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_q50j0emu.json; path = ../../../Downloads/lf30_editor_q50j0emu.json; sourceTree = "<group>"; };
 		AA1F4FF1259874F60074ED79 /* DriverVisionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriverVisionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1F4FF4259874F60074ED79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA1F4FF6259874F60074ED79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +98,6 @@
 		AA1F5012259874F80074ED79 /* DriverVisionAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriverVisionAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1F5016259874F80074ED79 /* DriverVisionAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverVisionAppUITests.swift; sourceTree = "<group>"; };
 		AA1F5018259874F80074ED79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA1F5027259875E30074ED79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AA4A002925D8358B00764C68 /* lf30_editor_46ulwchd.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lf30_editor_46ulwchd.json; sourceTree = "<group>"; };
 		AA4A002D25D8359B00764C68 /* lf30_editor_dlt2o6em.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lf30_editor_dlt2o6em.json; sourceTree = "<group>"; };
 		AA4A002E25D835A400764C68 /* lf30_editor_stpykcmy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = lf30_editor_stpykcmy.json; sourceTree = "<group>"; };
@@ -97,13 +107,8 @@
 		AA4E2B172599328900844AB9 /* TeenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenViewController.swift; sourceTree = "<group>"; };
 		AA4E2B1C25999C9F00844AB9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AA4E2B252599CF9500844AB9 /* ParentHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentHomeViewController.swift; sourceTree = "<group>"; };
-		AA4FFE4725DF7A820004AD64 /* lf30_editor_fpivp6yy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_fpivp6yy.json; path = ../../../Downloads/lf30_editor_fpivp6yy.json; sourceTree = "<group>"; };
-		AA4FFE4C25DF7B3C0004AD64 /* lf30_editor_wmagglsb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_wmagglsb.json; path = ../../../Downloads/lf30_editor_wmagglsb.json; sourceTree = "<group>"; };
 		AA51E2DC25D836D6005B96DD /* arrows.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = arrows.json; sourceTree = "<group>"; };
 		AA64945625BEA9E5004FEA06 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		AA663E3525CB8A8C0074626D /* car.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = car.json; path = ../../../Downloads/car.json; sourceTree = "<group>"; };
-		AA663E3A25CB940F0074626D /* mycar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mycar.json; path = ../../../Downloads/mycar.json; sourceTree = "<group>"; };
-		AA81A7DC25B2AA950007ACC8 /* lf30_editor_sftuxhry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_sftuxhry.json; path = ../../../Downloads/lf30_editor_sftuxhry.json; sourceTree = "<group>"; };
 		AA83AE8425CA8B9700174945 /* PreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreViewController.swift; sourceTree = "<group>"; };
 		AA8AA43D25D7457D006D3468 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		AA8AA44225D74EF2006D3468 /* SpeedScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedScrollViewController.swift; sourceTree = "<group>"; };
@@ -111,12 +116,9 @@
 		AA8AA44C25D74F14006D3468 /* SafeScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeScrollViewController.swift; sourceTree = "<group>"; };
 		AA94957A25987F96000A537B /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		AA949CD62639362100C6BAF0 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
-		AA949CDB2639368500C6BAF0 /* lf30_editor_eflvqs1l.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_eflvqs1l.json; path = ../../../Downloads/lf30_editor_eflvqs1l.json; sourceTree = "<group>"; };
 		AAA6D7BC25C932240059C676 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		AAAD9CE325FC3EAA00379A02 /* DriverVisionApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DriverVisionApp.entitlements; sourceTree = "<group>"; };
 		AADD58A6259A9F90004F054B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		AAE796B025B291F2005513A9 /* lf30_editor_xrhtiztp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_xrhtiztp.json; path = ../../../Downloads/lf30_editor_xrhtiztp.json; sourceTree = "<group>"; };
-		AAFD102E25D8347B0063B371 /* arrows.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = arrows.json; path = ../../../Downloads/arrows.json; sourceTree = "<group>"; };
 		ACE4B6E9E4A27F26ACAA7C66 /* Pods_DriverVisionApp_DriverVisionAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DriverVisionApp_DriverVisionAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B297FACE5930014D0C71595E /* Pods_DriverVisionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DriverVisionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5E09F3B080992561CF64A29 /* Pods-DriverVisionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriverVisionApp.debug.xcconfig"; path = "Target Support Files/Pods-DriverVisionApp/Pods-DriverVisionApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,19 +220,20 @@
 				AA1F4FFD259874F80074ED79 /* Assets.xcassets */,
 				AA1F4FFF259874F80074ED79 /* LaunchScreen.storyboard */,
 				AA1F5002259874F80074ED79 /* Info.plist */,
-				AA1F5027259875E30074ED79 /* GoogleService-Info.plist */,
-				AA0612A325D78D170016975C /* lf30_editor_46ulwchd.json */,
-				AA0612A525D78D170016975C /* lf30_editor_dlt2o6em.json */,
-				AA0612A425D78D170016975C /* lf30_editor_stpykcmy.json */,
-				AA19EF6525B22E290007D821 /* lf30_editor_q50j0emu.json */,
-				AAE796B025B291F2005513A9 /* lf30_editor_xrhtiztp.json */,
-				AA81A7DC25B2AA950007ACC8 /* lf30_editor_sftuxhry.json */,
-				AA4FFE4725DF7A820004AD64 /* lf30_editor_fpivp6yy.json */,
-				AA4FFE4C25DF7B3C0004AD64 /* lf30_editor_wmagglsb.json */,
-				AA949CDB2639368500C6BAF0 /* lf30_editor_eflvqs1l.json */,
-				AAFD102E25D8347B0063B371 /* arrows.json */,
-				AA663E3A25CB940F0074626D /* mycar.json */,
-				AA663E3525CB8A8C0074626D /* car.json */,
+				73D39DA526892E91002CFD2B /* arrows.json */,
+				73D39DAF26892E91002CFD2B /* car.json */,
+				73D39DA926892E91002CFD2B /* GoogleService-Info.plist */,
+				73D39DA726892E91002CFD2B /* lf30_editor_46ulwchd.json */,
+				73D39DA626892E91002CFD2B /* lf30_editor_dlt2o6em.json */,
+				73D39DE226895D12002CFD2B /* phone.json */,
+				73D39DA426892E91002CFD2B /* lf30_editor_eflvqs1l.json */,
+				73D39DAE26892E91002CFD2B /* lf30_editor_fpivp6yy.json */,
+				73D39DAB26892E91002CFD2B /* lf30_editor_q50j0emu.json */,
+				73D39DAD26892E91002CFD2B /* lf30_editor_sftuxhry.json */,
+				73D39DAA26892E91002CFD2B /* lf30_editor_stpykcmy.json */,
+				73D39DA826892E91002CFD2B /* lf30_editor_wmagglsb.json */,
+				73D39DAC26892E91002CFD2B /* lf30_editor_xrhtiztp.json */,
+				73D39DB026892E91002CFD2B /* mycar.json */,
 			);
 			path = DriverVisionApp;
 			sourceTree = "<group>";
@@ -297,7 +300,7 @@
 				AA1F4FED259874F60074ED79 /* Sources */,
 				AA1F4FEE259874F60074ED79 /* Frameworks */,
 				AA1F4FEF259874F60074ED79 /* Resources */,
-				D3F2A1B80B2C8A5A601038BF /* [CP] Embed Pods Frameworks */,
+				094CBC751EF290576760423C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,7 +338,7 @@
 				AA1F500E259874F80074ED79 /* Sources */,
 				AA1F500F259874F80074ED79 /* Frameworks */,
 				AA1F5010259874F80074ED79 /* Resources */,
-				F30C351AEA0DD81D29F2E188 /* [CP] Embed Pods Frameworks */,
+				882BBACF7DD4F655E7869189 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -394,22 +397,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA0612A825D78D170016975C /* lf30_editor_dlt2o6em.json in Resources */,
+				73D39DB326892E92002CFD2B /* lf30_editor_dlt2o6em.json in Resources */,
+				73D39DBC26892E92002CFD2B /* car.json in Resources */,
+				73D39DB826892E92002CFD2B /* lf30_editor_q50j0emu.json in Resources */,
 				AA1F5001259874F80074ED79 /* LaunchScreen.storyboard in Resources */,
-				AA1F5028259875E30074ED79 /* GoogleService-Info.plist in Resources */,
-				AA0612A625D78D170016975C /* lf30_editor_46ulwchd.json in Resources */,
-				AAFD102F25D8347B0063B371 /* arrows.json in Resources */,
-				AAE796B125B291F2005513A9 /* lf30_editor_xrhtiztp.json in Resources */,
-				AA663E3B25CB940F0074626D /* mycar.json in Resources */,
+				73D39DB126892E92002CFD2B /* lf30_editor_eflvqs1l.json in Resources */,
+				73D39DE326895D12002CFD2B /* phone.json in Resources */,
+				73D39DB726892E92002CFD2B /* lf30_editor_stpykcmy.json in Resources */,
+				73D39DB526892E92002CFD2B /* lf30_editor_wmagglsb.json in Resources */,
 				AA1F4FFE259874F80074ED79 /* Assets.xcassets in Resources */,
-				AA19EF6625B22E290007D821 /* lf30_editor_q50j0emu.json in Resources */,
-				AA949CDC2639368500C6BAF0 /* lf30_editor_eflvqs1l.json in Resources */,
-				AA4FFE4D25DF7B3C0004AD64 /* lf30_editor_wmagglsb.json in Resources */,
-				AA0612A725D78D170016975C /* lf30_editor_stpykcmy.json in Resources */,
+				73D39DB426892E92002CFD2B /* lf30_editor_46ulwchd.json in Resources */,
+				73D39DB226892E92002CFD2B /* arrows.json in Resources */,
+				73D39DB926892E92002CFD2B /* lf30_editor_xrhtiztp.json in Resources */,
+				73D39DBA26892E92002CFD2B /* lf30_editor_sftuxhry.json in Resources */,
 				AA1F4FFC259874F60074ED79 /* Main.storyboard in Resources */,
-				AA663E3625CB8A8C0074626D /* car.json in Resources */,
-				AA4FFE4825DF7A820004AD64 /* lf30_editor_fpivp6yy.json in Resources */,
-				AA81A7DD25B2AA950007ACC8 /* lf30_editor_sftuxhry.json in Resources */,
+				73D39DB626892E92002CFD2B /* GoogleService-Info.plist in Resources */,
+				73D39DBD26892E92002CFD2B /* mycar.json in Resources */,
+				73D39DBB26892E92002CFD2B /* lf30_editor_fpivp6yy.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +434,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		094CBC751EF290576760423C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DriverVisionApp/Pods-DriverVisionApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DriverVisionApp/Pods-DriverVisionApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DriverVisionApp/Pods-DriverVisionApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1D6CE8C77822BA6250596DEA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,6 +471,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		882BBACF7DD4F655E7869189 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DriverVisionApp-DriverVisionAppUITests/Pods-DriverVisionApp-DriverVisionAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DriverVisionApp-DriverVisionAppUITests/Pods-DriverVisionApp-DriverVisionAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DriverVisionApp-DriverVisionAppUITests/Pods-DriverVisionApp-DriverVisionAppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B181DE12BD4FFAC92382DB80 /* [CP] Check Pods Manifest.lock */ = {
@@ -474,23 +512,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3F2A1B80B2C8A5A601038BF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DriverVisionApp/Pods-DriverVisionApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DriverVisionApp/Pods-DriverVisionApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DriverVisionApp/Pods-DriverVisionApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E243E404C794FC942C4F3784 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,23 +532,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F30C351AEA0DD81D29F2E188 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DriverVisionApp-DriverVisionAppUITests/Pods-DriverVisionApp-DriverVisionAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DriverVisionApp-DriverVisionAppUITests/Pods-DriverVisionApp-DriverVisionAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DriverVisionApp-DriverVisionAppUITests/Pods-DriverVisionApp-DriverVisionAppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

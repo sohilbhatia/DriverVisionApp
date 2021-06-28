@@ -13,8 +13,10 @@ class LaunchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var animationV =  AnimationView(name: "lf30_editor_q50j0emu")
-        animationV = AnimationView(name: "lf30_editor_q50j0emu")
+        //var animationV =  AnimationView(name: "lf30_editor_q50j0emu")
+        //animationV = AnimationView(name: "lf30_editor_q50j0emu")
+        var animationV =  AnimationView(name: "phone")
+        animationV = AnimationView(name: "phone")
         animationV.contentMode = .scaleAspectFit
         self.openView.addSubview(animationV)
         animationV.frame = self.openView.bounds
