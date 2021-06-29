@@ -636,24 +636,26 @@
                                 <rect key="frame" x="-55" y="183" width="518" height="595"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nxb-ST-gCx">
-                                <rect key="frame" x="252" y="763" width="204" height="68"/>
+                                <rect key="frame" x="210" y="773" width="204" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="WWX-uG-9iq"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lHg-km-2T3"/>
                         <color key="backgroundColor" red="0.1960784314" green="0.4431372549" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="Nxb-ST-gCx" firstAttribute="trailing" secondItem="lHg-km-2T3" secondAttribute="trailing" id="ACT-ue-nyR"/>
                             <constraint firstItem="Ubv-pX-NPw" firstAttribute="centerX" secondItem="26s-SL-7eA" secondAttribute="centerX" id="AVO-JC-yrE"/>
+                            <constraint firstItem="Nxb-ST-gCx" firstAttribute="leading" secondItem="lHg-km-2T3" secondAttribute="leading" constant="210" id="Azj-M5-8Ha"/>
                             <constraint firstItem="snw-R9-K82" firstAttribute="top" secondItem="26s-SL-7eA" secondAttribute="bottom" constant="47" id="IR3-Wm-hoQ"/>
                             <constraint firstItem="26s-SL-7eA" firstAttribute="centerX" secondItem="NUM-u0-lQT" secondAttribute="centerX" id="M0M-fX-b47"/>
                             <constraint firstItem="26s-SL-7eA" firstAttribute="top" secondItem="lHg-km-2T3" secondAttribute="top" constant="35" id="N7M-jd-GvD"/>
                             <constraint firstItem="snw-R9-K82" firstAttribute="leading" secondItem="NUM-u0-lQT" secondAttribute="leadingMargin" constant="-75" id="Wdd-K9-XEO"/>
-                            <constraint firstItem="lHg-km-2T3" firstAttribute="bottom" secondItem="Nxb-ST-gCx" secondAttribute="bottom" constant="31" id="Zcg-gj-9zE"/>
                             <constraint firstItem="Ubv-pX-NPw" firstAttribute="centerX" secondItem="snw-R9-K82" secondAttribute="centerX" constant="3" id="b1s-Cf-SVl"/>
+                            <constraint firstItem="lHg-km-2T3" firstAttribute="bottom" secondItem="Nxb-ST-gCx" secondAttribute="bottom" constant="21" id="cJQ-91-okP"/>
                             <constraint firstItem="lHg-km-2T3" firstAttribute="bottom" secondItem="snw-R9-K82" secondAttribute="bottom" constant="84" id="cL5-V0-Y2T"/>
                             <constraint firstItem="Ubv-pX-NPw" firstAttribute="top" secondItem="26s-SL-7eA" secondAttribute="bottom" constant="15" id="dPd-iW-b5O"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Nxb-ST-gCx" secondAttribute="trailing" constant="-62" id="mbt-wc-GLi"/>
-                            <constraint firstItem="Nxb-ST-gCx" firstAttribute="top" secondItem="NUM-u0-lQT" secondAttribute="top" constant="763" id="tvX-ss-h3q"/>
-                            <constraint firstItem="Nxb-ST-gCx" firstAttribute="leading" secondItem="lHg-km-2T3" secondAttribute="leading" constant="252" id="ynP-SX-Mli"/>
                         </constraints>
                     </view>
                     <connections>

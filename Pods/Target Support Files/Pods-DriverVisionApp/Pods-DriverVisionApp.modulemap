@@ -1,0 +1,6 @@
+framework module Pods_DriverVisionApp {
+  umbrella header "Pods-DriverVisionApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
