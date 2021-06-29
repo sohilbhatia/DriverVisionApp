@@ -560,7 +560,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Oc-xJ-ESP">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Oc-xJ-ESP">
                                 <rect key="frame" x="87" y="530" width="263" height="277"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -576,9 +576,7 @@
                         <viewLayoutGuide key="safeArea" id="vJN-fn-1Sh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="0Oc-xJ-ESP" secondAttribute="trailing" constant="-31" id="57w-7s-3Uv"/>
                             <constraint firstItem="W9Y-gY-HsN" firstAttribute="top" secondItem="86y-S3-Df0" secondAttribute="bottom" constant="5" id="7qa-tA-Wey"/>
-                            <constraint firstItem="vJN-fn-1Sh" firstAttribute="trailing" secondItem="0Oc-xJ-ESP" secondAttribute="trailing" constant="90" id="8Nm-cb-Bz0"/>
                             <constraint firstItem="86y-S3-Df0" firstAttribute="top" secondItem="vJN-fn-1Sh" secondAttribute="top" constant="39" id="O6D-nY-Txu"/>
                             <constraint firstItem="86y-S3-Df0" firstAttribute="leading" secondItem="vJN-fn-1Sh" secondAttribute="leading" constant="20" id="bJS-MY-Dmr"/>
                             <constraint firstItem="vJN-fn-1Sh" firstAttribute="trailing" secondItem="W9Y-gY-HsN" secondAttribute="trailing" constant="40" id="dBL-ge-2h6"/>
