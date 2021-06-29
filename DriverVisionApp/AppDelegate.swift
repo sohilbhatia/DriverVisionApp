@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
 
-    
+    Thread.sleep(forTimeInterval: 1.0)
     if(UIApplication.shared.backgroundRefreshStatus == UIBackgroundRefreshStatus.available){
             print("yessssss")
         }else{
