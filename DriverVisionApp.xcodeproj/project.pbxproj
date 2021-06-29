@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		22622E847C670B9C079957CD /* Pods_DriverVisionAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1863F4EC28AF0DC73C3D2695 /* Pods_DriverVisionAppTests.framework */; };
 		37C0DE806D1E6272D0D13B18 /* Pods_DriverVisionApp_DriverVisionAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE4B6E9E4A27F26ACAA7C66 /* Pods_DriverVisionApp_DriverVisionAppUITests.framework */; };
-		73D39DB126892E92002CFD2B /* lf30_editor_eflvqs1l.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DA426892E91002CFD2B /* lf30_editor_eflvqs1l.json */; };
-		73D39DB226892E92002CFD2B /* arrows.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DA526892E91002CFD2B /* arrows.json */; };
-		73D39DB326892E92002CFD2B /* lf30_editor_dlt2o6em.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DA626892E91002CFD2B /* lf30_editor_dlt2o6em.json */; };
-		73D39DB426892E92002CFD2B /* lf30_editor_46ulwchd.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DA726892E91002CFD2B /* lf30_editor_46ulwchd.json */; };
-		73D39DB526892E92002CFD2B /* lf30_editor_wmagglsb.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DA826892E91002CFD2B /* lf30_editor_wmagglsb.json */; };
-		73D39DB626892E92002CFD2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DA926892E91002CFD2B /* GoogleService-Info.plist */; };
-		73D39DB726892E92002CFD2B /* lf30_editor_stpykcmy.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DAA26892E91002CFD2B /* lf30_editor_stpykcmy.json */; };
-		73D39DB826892E92002CFD2B /* lf30_editor_q50j0emu.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DAB26892E91002CFD2B /* lf30_editor_q50j0emu.json */; };
-		73D39DB926892E92002CFD2B /* lf30_editor_xrhtiztp.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DAC26892E91002CFD2B /* lf30_editor_xrhtiztp.json */; };
-		73D39DBA26892E92002CFD2B /* lf30_editor_sftuxhry.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DAD26892E91002CFD2B /* lf30_editor_sftuxhry.json */; };
-		73D39DBB26892E92002CFD2B /* lf30_editor_fpivp6yy.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DAE26892E91002CFD2B /* lf30_editor_fpivp6yy.json */; };
-		73D39DBC26892E92002CFD2B /* car.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DAF26892E91002CFD2B /* car.json */; };
-		73D39DBD26892E92002CFD2B /* mycar.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DB026892E91002CFD2B /* mycar.json */; };
-		73D39DE326895D12002CFD2B /* phone.json in Resources */ = {isa = PBXBuildFile; fileRef = 73D39DE226895D12002CFD2B /* phone.json */; };
 		85DF74B17C5A6CCB801964D5 /* Pods_DriverVisionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B297FACE5930014D0C71595E /* Pods_DriverVisionApp.framework */; };
+		AA1679AA268AB2DD00372C3D /* arrows.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1679A9268AB2DD00372C3D /* arrows.json */; };
+		AA1679AF268AB30B00372C3D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA1679AE268AB30B00372C3D /* GoogleService-Info.plist */; };
+		AA1679B9268AB32200372C3D /* lf30_editor_xrhtiztp.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1679B3268AB32100372C3D /* lf30_editor_xrhtiztp.json */; };
+		AA1679BA268AB32200372C3D /* lf30_editor_dlt2o6em.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1679B4268AB32200372C3D /* lf30_editor_dlt2o6em.json */; };
+		AA1679BB268AB32200372C3D /* lf30_editor_q50j0emu.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1679B5268AB32200372C3D /* lf30_editor_q50j0emu.json */; };
+		AA1679BC268AB32200372C3D /* lf30_editor_46ulwchd.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1679B6268AB32200372C3D /* lf30_editor_46ulwchd.json */; };
+		AA1679BD268AB32200372C3D /* lf30_editor_sftuxhry.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1679B7268AB32200372C3D /* lf30_editor_sftuxhry.json */; };
+		AA1679BE268AB32200372C3D /* lf30_editor_stpykcmy.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1679B8268AB32200372C3D /* lf30_editor_stpykcmy.json */; };
+		AA1679C9268AB36000372C3D /* car.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1679C8268AB36000372C3D /* car.json */; };
+		AA1679D1268AB38100372C3D /* lf30_editor_wmagglsb.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1679D0268AB38000372C3D /* lf30_editor_wmagglsb.json */; };
+		AA1679D9268AB39200372C3D /* lf30_editor_fpivp6yy.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1679D8268AB39200372C3D /* lf30_editor_fpivp6yy.json */; };
+		AA1679E1268AB3A200372C3D /* lf30_editor_eflvqs1l.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1679E0268AB3A200372C3D /* lf30_editor_eflvqs1l.json */; };
+		AA1679E9268AB3B100372C3D /* mycar.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1679E8268AB3B100372C3D /* mycar.json */; };
+		AA1679FC268AB4AC00372C3D /* phone.json in Resources */ = {isa = PBXBuildFile; fileRef = AA1679FB268AB4AC00372C3D /* phone.json */; };
 		AA1F4FF5259874F60074ED79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F4FF4259874F60074ED79 /* AppDelegate.swift */; };
 		AA1F4FF7259874F60074ED79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F4FF6259874F60074ED79 /* SceneDelegate.swift */; };
 		AA1F4FF9259874F60074ED79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1F4FF8259874F60074ED79 /* ViewController.swift */; };
@@ -68,22 +68,22 @@
 		1863F4EC28AF0DC73C3D2695 /* Pods_DriverVisionAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DriverVisionAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		470525E10E7E2ACBF7463560 /* Pods-DriverVisionApp-DriverVisionAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriverVisionApp-DriverVisionAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-DriverVisionApp-DriverVisionAppUITests/Pods-DriverVisionApp-DriverVisionAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		57D924B43CA803C4266E2567 /* Pods-DriverVisionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriverVisionApp.release.xcconfig"; path = "Target Support Files/Pods-DriverVisionApp/Pods-DriverVisionApp.release.xcconfig"; sourceTree = "<group>"; };
-		73D39DA426892E91002CFD2B /* lf30_editor_eflvqs1l.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_eflvqs1l.json; path = "../../../Downloads/needed files/lf30_editor_eflvqs1l.json"; sourceTree = "<group>"; };
-		73D39DA526892E91002CFD2B /* arrows.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = arrows.json; path = "../../../Downloads/needed files/arrows.json"; sourceTree = "<group>"; };
-		73D39DA626892E91002CFD2B /* lf30_editor_dlt2o6em.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_dlt2o6em.json; path = "../../../Downloads/needed files/lf30_editor_dlt2o6em.json"; sourceTree = "<group>"; };
-		73D39DA726892E91002CFD2B /* lf30_editor_46ulwchd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_46ulwchd.json; path = "../../../Downloads/needed files/lf30_editor_46ulwchd.json"; sourceTree = "<group>"; };
-		73D39DA826892E91002CFD2B /* lf30_editor_wmagglsb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_wmagglsb.json; path = "../../../Downloads/needed files/lf30_editor_wmagglsb.json"; sourceTree = "<group>"; };
-		73D39DA926892E91002CFD2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/needed files/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		73D39DAA26892E91002CFD2B /* lf30_editor_stpykcmy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_stpykcmy.json; path = "../../../Downloads/needed files/lf30_editor_stpykcmy.json"; sourceTree = "<group>"; };
-		73D39DAB26892E91002CFD2B /* lf30_editor_q50j0emu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_q50j0emu.json; path = "../../../Downloads/needed files/lf30_editor_q50j0emu.json"; sourceTree = "<group>"; };
-		73D39DAC26892E91002CFD2B /* lf30_editor_xrhtiztp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_xrhtiztp.json; path = "../../../Downloads/needed files/lf30_editor_xrhtiztp.json"; sourceTree = "<group>"; };
-		73D39DAD26892E91002CFD2B /* lf30_editor_sftuxhry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_sftuxhry.json; path = "../../../Downloads/needed files/lf30_editor_sftuxhry.json"; sourceTree = "<group>"; };
-		73D39DAE26892E91002CFD2B /* lf30_editor_fpivp6yy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_fpivp6yy.json; path = "../../../Downloads/needed files/lf30_editor_fpivp6yy.json"; sourceTree = "<group>"; };
-		73D39DAF26892E91002CFD2B /* car.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = car.json; path = "../../../Downloads/needed files/car.json"; sourceTree = "<group>"; };
-		73D39DB026892E91002CFD2B /* mycar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mycar.json; path = "../../../Downloads/needed files/mycar.json"; sourceTree = "<group>"; };
-		73D39DE226895D12002CFD2B /* phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = phone.json; path = ../../../Downloads/phone.json; sourceTree = "<group>"; };
 		797FBACA3CF8695210AD445F /* Pods-DriverVisionAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriverVisionAppTests.release.xcconfig"; path = "Target Support Files/Pods-DriverVisionAppTests/Pods-DriverVisionAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		A9DDD7D21925FEB77B2C5FEB /* Pods-DriverVisionAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriverVisionAppTests.debug.xcconfig"; path = "Target Support Files/Pods-DriverVisionAppTests/Pods-DriverVisionAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA1679A9268AB2DD00372C3D /* arrows.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = arrows.json; path = "JSON Files/arrows.json"; sourceTree = "<group>"; };
+		AA1679AE268AB30B00372C3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA1679B3268AB32100372C3D /* lf30_editor_xrhtiztp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_xrhtiztp.json; path = "JSON Files/lf30_editor_xrhtiztp.json"; sourceTree = "<group>"; };
+		AA1679B4268AB32200372C3D /* lf30_editor_dlt2o6em.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_dlt2o6em.json; path = "JSON Files/lf30_editor_dlt2o6em.json"; sourceTree = "<group>"; };
+		AA1679B5268AB32200372C3D /* lf30_editor_q50j0emu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_q50j0emu.json; path = "JSON Files/lf30_editor_q50j0emu.json"; sourceTree = "<group>"; };
+		AA1679B6268AB32200372C3D /* lf30_editor_46ulwchd.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_46ulwchd.json; path = "JSON Files/lf30_editor_46ulwchd.json"; sourceTree = "<group>"; };
+		AA1679B7268AB32200372C3D /* lf30_editor_sftuxhry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_sftuxhry.json; path = "JSON Files/lf30_editor_sftuxhry.json"; sourceTree = "<group>"; };
+		AA1679B8268AB32200372C3D /* lf30_editor_stpykcmy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_stpykcmy.json; path = "JSON Files/lf30_editor_stpykcmy.json"; sourceTree = "<group>"; };
+		AA1679C8268AB36000372C3D /* car.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = car.json; path = ../../../Downloads/car.json; sourceTree = "<group>"; };
+		AA1679D0268AB38000372C3D /* lf30_editor_wmagglsb.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_wmagglsb.json; path = ../../../Downloads/lf30_editor_wmagglsb.json; sourceTree = "<group>"; };
+		AA1679D8268AB39200372C3D /* lf30_editor_fpivp6yy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_fpivp6yy.json; path = ../../../Downloads/lf30_editor_fpivp6yy.json; sourceTree = "<group>"; };
+		AA1679E0268AB3A200372C3D /* lf30_editor_eflvqs1l.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = lf30_editor_eflvqs1l.json; path = ../../../Downloads/lf30_editor_eflvqs1l.json; sourceTree = "<group>"; };
+		AA1679E8268AB3B100372C3D /* mycar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mycar.json; path = ../../../Downloads/mycar.json; sourceTree = "<group>"; };
+		AA1679FB268AB4AC00372C3D /* phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = phone.json; path = ../../../Downloads/phone.json; sourceTree = "<group>"; };
 		AA1F4FF1259874F60074ED79 /* DriverVisionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriverVisionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1F4FF4259874F60074ED79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA1F4FF6259874F60074ED79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -220,20 +220,20 @@
 				AA1F4FFD259874F80074ED79 /* Assets.xcassets */,
 				AA1F4FFF259874F80074ED79 /* LaunchScreen.storyboard */,
 				AA1F5002259874F80074ED79 /* Info.plist */,
-				73D39DA526892E91002CFD2B /* arrows.json */,
-				73D39DAF26892E91002CFD2B /* car.json */,
-				73D39DA926892E91002CFD2B /* GoogleService-Info.plist */,
-				73D39DA726892E91002CFD2B /* lf30_editor_46ulwchd.json */,
-				73D39DA626892E91002CFD2B /* lf30_editor_dlt2o6em.json */,
-				73D39DE226895D12002CFD2B /* phone.json */,
-				73D39DA426892E91002CFD2B /* lf30_editor_eflvqs1l.json */,
-				73D39DAE26892E91002CFD2B /* lf30_editor_fpivp6yy.json */,
-				73D39DAB26892E91002CFD2B /* lf30_editor_q50j0emu.json */,
-				73D39DAD26892E91002CFD2B /* lf30_editor_sftuxhry.json */,
-				73D39DAA26892E91002CFD2B /* lf30_editor_stpykcmy.json */,
-				73D39DA826892E91002CFD2B /* lf30_editor_wmagglsb.json */,
-				73D39DAC26892E91002CFD2B /* lf30_editor_xrhtiztp.json */,
-				73D39DB026892E91002CFD2B /* mycar.json */,
+				AA1679B6268AB32200372C3D /* lf30_editor_46ulwchd.json */,
+				AA1679B4268AB32200372C3D /* lf30_editor_dlt2o6em.json */,
+				AA1679B5268AB32200372C3D /* lf30_editor_q50j0emu.json */,
+				AA1679B7268AB32200372C3D /* lf30_editor_sftuxhry.json */,
+				AA1679B8268AB32200372C3D /* lf30_editor_stpykcmy.json */,
+				AA1679B3268AB32100372C3D /* lf30_editor_xrhtiztp.json */,
+				AA1679C8268AB36000372C3D /* car.json */,
+				AA1679E0268AB3A200372C3D /* lf30_editor_eflvqs1l.json */,
+				AA1679FB268AB4AC00372C3D /* phone.json */,
+				AA1679E8268AB3B100372C3D /* mycar.json */,
+				AA1679A9268AB2DD00372C3D /* arrows.json */,
+				AA1679D0268AB38000372C3D /* lf30_editor_wmagglsb.json */,
+				AA1679AE268AB30B00372C3D /* GoogleService-Info.plist */,
+				AA1679D8268AB39200372C3D /* lf30_editor_fpivp6yy.json */,
 			);
 			path = DriverVisionApp;
 			sourceTree = "<group>";
@@ -397,23 +397,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73D39DB326892E92002CFD2B /* lf30_editor_dlt2o6em.json in Resources */,
-				73D39DBC26892E92002CFD2B /* car.json in Resources */,
-				73D39DB826892E92002CFD2B /* lf30_editor_q50j0emu.json in Resources */,
+				AA1679BD268AB32200372C3D /* lf30_editor_sftuxhry.json in Resources */,
+				AA1679BA268AB32200372C3D /* lf30_editor_dlt2o6em.json in Resources */,
+				AA1679C9268AB36000372C3D /* car.json in Resources */,
+				AA1679BE268AB32200372C3D /* lf30_editor_stpykcmy.json in Resources */,
 				AA1F5001259874F80074ED79 /* LaunchScreen.storyboard in Resources */,
-				73D39DB126892E92002CFD2B /* lf30_editor_eflvqs1l.json in Resources */,
-				73D39DE326895D12002CFD2B /* phone.json in Resources */,
-				73D39DB726892E92002CFD2B /* lf30_editor_stpykcmy.json in Resources */,
-				73D39DB526892E92002CFD2B /* lf30_editor_wmagglsb.json in Resources */,
+				AA1679FC268AB4AC00372C3D /* phone.json in Resources */,
+				AA1679B9268AB32200372C3D /* lf30_editor_xrhtiztp.json in Resources */,
+				AA1679D9268AB39200372C3D /* lf30_editor_fpivp6yy.json in Resources */,
+				AA1679BC268AB32200372C3D /* lf30_editor_46ulwchd.json in Resources */,
 				AA1F4FFE259874F80074ED79 /* Assets.xcassets in Resources */,
-				73D39DB426892E92002CFD2B /* lf30_editor_46ulwchd.json in Resources */,
-				73D39DB226892E92002CFD2B /* arrows.json in Resources */,
-				73D39DB926892E92002CFD2B /* lf30_editor_xrhtiztp.json in Resources */,
-				73D39DBA26892E92002CFD2B /* lf30_editor_sftuxhry.json in Resources */,
+				AA1679E1268AB3A200372C3D /* lf30_editor_eflvqs1l.json in Resources */,
+				AA1679AF268AB30B00372C3D /* GoogleService-Info.plist in Resources */,
+				AA1679E9268AB3B100372C3D /* mycar.json in Resources */,
+				AA1679AA268AB2DD00372C3D /* arrows.json in Resources */,
+				AA1679BB268AB32200372C3D /* lf30_editor_q50j0emu.json in Resources */,
 				AA1F4FFC259874F60074ED79 /* Main.storyboard in Resources */,
-				73D39DB626892E92002CFD2B /* GoogleService-Info.plist in Resources */,
-				73D39DBD26892E92002CFD2B /* mycar.json in Resources */,
-				73D39DBB26892E92002CFD2B /* lf30_editor_fpivp6yy.json in Resources */,
+				AA1679D1268AB38100372C3D /* lf30_editor_wmagglsb.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

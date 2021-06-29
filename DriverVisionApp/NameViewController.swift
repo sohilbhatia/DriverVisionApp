@@ -41,12 +41,25 @@ class NameViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func nxtClick(_ sender: Any) {
-        name = nameField.text!
-        print(defaults.value(forKey: "code")!)
-        //UserDefaults.standard.set(true, forKey: "isLogged")
-        let g_vc = self.storyboard?.instantiateViewController(identifier: "map_vc") as! MapViewController
-        self.view.window?.rootViewController = g_vc
-        self.view.window?.makeKeyAndVisible()
+        if (nameField.text == "") {
+            let animation = CABasicAnimation(keyPath: "position")
+            animation.duration = 0.07
+            animation.repeatCount = 4
+            animation.autoreverses = true
+            animation.fromValue = NSValue(cgPoint: CGPoint(x: self.nameField.center.x - 10, y: nameField.center.y))
+            animation.toValue = NSValue(cgPoint: CGPoint(x: nameField.center.x + 10, y: nameField.center.y))
+
+            nameField.layer.add(animation, forKey: "position")
+        }
+        else {
+            name = nameField.text!
+            print(defaults.value(forKey: "code")!)
+            //UserDefaults.standard.set(true, forKey: "isLogged")
+            let g_vc = self.storyboard?.instantiateViewController(identifier: "map_vc") as! MapViewController
+            self.view.window?.rootViewController = g_vc
+            self.view.window?.makeKeyAndVisible()
+        }
+        
     }
 
 }
