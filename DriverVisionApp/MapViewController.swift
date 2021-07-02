@@ -125,7 +125,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         print(location)
         
-        if (speedTest > 1) {
+        if ((speedTest > 1.5) && (speedlim > 0)) {
             print("Drive Started")
             continueAlerts = true
             //print("SPEED TEST - " + String(continueAlerts))
